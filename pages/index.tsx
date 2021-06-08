@@ -1,7 +1,5 @@
-import Layout from "../components/layout";
-
 export default function Home({ allPostsData }) {
-  return <Layout />;
+  return <h1>Home</h1>;
 }
 
 export async function getStaticProps() {
