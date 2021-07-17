@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from "../styles/header.module.css";
 
 export default function Header() {
@@ -7,13 +8,15 @@ export default function Header() {
         <h1>LaKhDaR</h1>
         <ul className={styles["menu-list"]}>
           <li>
-            <a href="">Skills</a>
+            <Link href='#skills'><a>Skills</a></Link>
+            
           </li>
           <li>
-            <a href="">Projects</a>
+            <Link href="#projects"><a>Projects</a></Link>
           </li>
           <li>
-            <a href="">Contact</a>
+
+          <Link href="#contact"><a>Contact</a></Link>
           </li>
         </ul>
       </nav>

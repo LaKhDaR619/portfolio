@@ -1,5 +1,11 @@
-export default function Home({ allPostsData }) {
-  return <h1>Home</h1>;
+import { useEffect } from "react";
+
+export default function Home() {
+  return (
+    <div>
+      <p>Hello My Name is LaKhDaR</p>
+    </div>
+  );
 }
 
 export async function getStaticProps() {

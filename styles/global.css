@@ -1,5 +1,25 @@
+:root {
+  --primary: #1d3557;
+  --secondary: #457b9d;
+  --text-primary: #f1faee;
+  --text-secondary: #a8dadc;
+  --danger: #e63946;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+a:hover {
+  color: var(--danger);
 }
