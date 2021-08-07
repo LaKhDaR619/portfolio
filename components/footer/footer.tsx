@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <FooterItem iconName="bxl-instagram" />
         <FooterItem iconName="bxl-twitter" />
       </div>
-      <p>&#169; 2021 copyright all right reserved</p>
+      <p>&#169; 2021 </p>
     </footer>
   );
 };
