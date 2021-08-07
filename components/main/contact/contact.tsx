@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
           />
           <input
             type="button"
-            value="Enviar"
+            value="Send"
             className={`${styles.contactButton} button`}
           />
         </form>
