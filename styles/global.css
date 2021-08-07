@@ -99,3 +99,16 @@ img {
     margin-right: auto;
   }
 }
+
+/*BUTTONS*/
+.button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: 0.5rem;
+}
+.button:hover {
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+}

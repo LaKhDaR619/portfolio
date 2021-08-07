@@ -8,7 +8,7 @@ export default function Nav() {
     <nav className={`${styles.nav} grid`}>
       <div>
         <a href="#" className={styles.navLogo}>
-          Marlon
+          LaKhDaR
         </a>
       </div>
       <div className={`${styles.navMenu} ${show}`}>
