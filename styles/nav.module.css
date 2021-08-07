@@ -46,7 +46,7 @@ nav.nav {
     display: none;
   }
   .navLink {
-    color: var(--second-color);
+    color: var(--secondary-color);
   }
 }
 
