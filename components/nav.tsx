@@ -8,11 +8,10 @@ export default function Nav() {
           Marlon
         </a>
       </div>
-
       <div className={styles.navMenu} id="nav-menu">
         <ul className={styles.navList}>
           <li className={styles.navItem}>
-            <a href="#home" className={`${styles.navLink} active`}>
+            <a href="#home" className={`${styles.navLink} ${styles.active}`}>
               Home
             </a>
           </li>
