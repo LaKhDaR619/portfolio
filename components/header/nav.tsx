@@ -1,5 +1,5 @@
-import { useMenuToggle } from "../hooks/MenuToggle";
-import styles from "../styles/nav.module.css";
+import { useMenuToggle } from "../../hooks/MenuToggle";
+import styles from "../../styles/nav.module.css";
 
 export default function Nav() {
   const { show, toggleShow } = useMenuToggle();
