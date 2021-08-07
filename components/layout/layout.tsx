@@ -1,4 +1,4 @@
-import Content from "./main";
+import Content from "../main/main";
 import CustomHead from "../head/customHead";
 import Header from "../header/header";
 import Footer from "../footer/footer";
