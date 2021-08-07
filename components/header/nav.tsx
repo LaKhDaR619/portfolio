@@ -1,8 +1,25 @@
-import { useMenuToggle } from "../../hooks/MenuToggle";
+import { useState } from "react";
+import { useToggle } from "../../hooks/useToggle";
 import styles from "../../styles/nav.module.css";
+import NavItem from "./navItem";
 
 export default function Nav() {
-  const { show, toggleShow } = useMenuToggle();
+  const Items = [
+    { href: "home", name: "Home" },
+    { href: "about", name: "About" },
+    { href: "skills", name: "Skills" },
+    { href: "work", name: "Work" },
+    { href: "contact", name: "Contact" },
+  ];
+
+  const [showMenu, toggleShowMenu] = useToggle();
+
+  const [active, setActive] = useState("home");
+
+  const handleSetActive = (value: string) => {
+    setActive(value);
+    toggleShowMenu();
+  };
 
   return (
     <nav className={`${styles.nav} grid`}>
@@ -11,36 +28,20 @@ export default function Nav() {
           LaKhDaR
         </a>
       </div>
-      <div className={`${styles.navMenu} ${show}`}>
+      <div className={`${styles.navMenu} ${showMenu ? styles.show : ""}`}>
         <ul className={styles.navList}>
-          <li className={styles.navItem}>
-            <a href="#home" className={`${styles.navLink} ${styles.active}`}>
-              Home
-            </a>
-          </li>
-          <li className={styles.navItem}>
-            <a href="#about" className={styles.navLink}>
-              About
-            </a>
-          </li>
-          <li className={styles.navItem}>
-            <a href="#skills" className={styles.navLink}>
-              Skills
-            </a>
-          </li>
-          <li className={styles.navItem}>
-            <a href="#work" className={styles.navLink}>
-              Work
-            </a>
-          </li>
-          <li className={styles.navItem}>
-            <a href="#contact" className={styles.navLink}>
-              Contact
-            </a>
-          </li>
+          {Items.map((item) => (
+            <NavItem
+              key={item.name}
+              href={item.href}
+              name={item.name}
+              active={active}
+              setActive={handleSetActive}
+            />
+          ))}
         </ul>
       </div>
-      <div className={styles.navToggle} onClick={toggleShow}>
+      <div className={styles.navToggle} onClick={toggleShowMenu}>
         <i className="bx bx-menu"></i>
       </div>
     </nav>
