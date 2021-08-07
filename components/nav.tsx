@@ -1,6 +1,9 @@
+import { useMenuToggle } from "../hooks/MenuToggle";
 import styles from "../styles/nav.module.css";
 
 export default function Nav() {
+  const { show, toggleShow } = useMenuToggle();
+
   return (
     <nav className={`${styles.nav} grid`}>
       <div>
@@ -8,7 +11,7 @@ export default function Nav() {
           Marlon
         </a>
       </div>
-      <div className={styles.navMenu} id="nav-menu">
+      <div className={`${styles.navMenu} ${show}`}>
         <ul className={styles.navList}>
           <li className={styles.navItem}>
             <a href="#home" className={`${styles.navLink} ${styles.active}`}>
@@ -37,8 +40,7 @@ export default function Nav() {
           </li>
         </ul>
       </div>
-
-      <div className={styles.navToggle} id="nav-toggle">
+      <div className={styles.navToggle} onClick={toggleShow}>
         <i className="bx bx-menu"></i>
       </div>
     </nav>

@@ -73,3 +73,7 @@ nav.nav {
   top: 2rem;
   background-color: var(--primary-color);
 }
+
+.show {
+  right: 0;
+}
