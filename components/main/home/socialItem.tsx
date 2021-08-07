@@ -6,7 +6,7 @@ type Props = {
 
 const SocialItem: React.FC<Props> = ({ iconName }) => {
   return (
-    <a className={styles.homeSocialIcon}>
+    <a href="" className={styles.homeSocialIcon}>
       <i className={`bx ${iconName}`} />
     </a>
   );
