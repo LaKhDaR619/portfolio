@@ -8,7 +8,7 @@ const Skills: React.FC = () => {
 
       <div className={`${styles.skillsContainer} grid`}>
         <div>
-          <h2 className={styles.skillsSubtitle}>Profesional Skills</h2>
+          <h2 className={styles.skillsSubtitle}>Professional Skills</h2>
           <p className={styles.skillsText}>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
             optio id vero amet, alias architecto consectetur error eum eaque
