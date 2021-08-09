@@ -38,7 +38,7 @@ export default function Nav() {
           onClick={toggleShowMenu}
         />
       </div>
-      <div className={styles.nav__btns}>
+      <div>
         <div className={styles.nav__toggle} onClick={toggleShowMenu}>
           <i className="uil uil-apps" />
         </div>

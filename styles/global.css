@@ -3,7 +3,6 @@
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
-  --font-semi: 600;
 }
 
 /*===== Colors =====*/
@@ -14,7 +13,7 @@
   --primary-color-alt: hsl(var(--hue-color), 57%, 53%);
   --primary-color-light: hsl(var(--hue-color), 92%, 85%);
   --secondary-color: hsl(var(--hue-color), 69%, 61%);
-  --title-color: hsl(var(--hue-color), 8%, 51%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
   --text-color: hsl(var(--hue-color), 8%, 45%);
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
   --input-color: hsl(var(--hue-color), 70%, 96%);

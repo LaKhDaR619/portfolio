@@ -18,7 +18,7 @@ const Home: React.FC = () => {
   ];
 
   return (
-    <section className={`${styles.home} section`}>
+    <section className="section" id="home">
       <div className={`${styles.home__container} container grid`}>
         <div className={`${styles.home__content} grid`}>
           <div className={styles.home__social}>

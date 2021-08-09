@@ -8,6 +8,7 @@ const Main: React.FC = () => {
   return (
     <main>
       <Home />
+      <About />
     </main>
   );
 };
