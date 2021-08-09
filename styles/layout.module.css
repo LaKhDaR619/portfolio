@@ -1,6 +1,12 @@
-.mainLayout {
-  min-height: 100vh;
-  display: grid;
+.container {
+  min-width: 768px;
+  margin-left: var(--m-1-5);
+  margin-right: var(--m-1-5);
 
   grid-template-rows: 70px auto 60px;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
 }
