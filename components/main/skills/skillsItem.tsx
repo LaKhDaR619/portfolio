@@ -1,21 +1,22 @@
 import styles from "../../../styles/skills.module.css";
 
 type Props = {
-  iconName: string;
-  title: string;
+  name: string;
   percentage: number;
 };
 
-const SkillsItem: React.FC<Props> = ({ iconName, title, percentage }) => {
+const SkillsItem: React.FC<Props> = ({ name, percentage }) => {
   return (
-    <div className={styles.skillsData}>
-      <div className={styles.skillsName}>
-        <i className={`bx ${iconName} ${styles.skillsIcon}`} />
-        <span>{title.toUpperCase()}</span>
+    <div className={styles.skills__data}>
+      <div className={styles.skills__titles}>
+        <h3 className={styles.skills__name}>{name}</h3>
+        <span className={styles.skills__number}>{percentage}%</span>
       </div>
-      <div className={styles.skillsBar} style={{ width: `${percentage}%` }} />
-      <div>
-        <span className={styles.skillsPercentage}>{`${percentage}%`}</span>
+      <div className={styles.skills__bar}>
+        <span
+          style={{ width: `${percentage}%` }}
+          className={styles.skills__percentage}
+        ></span>
       </div>
     </div>
   );

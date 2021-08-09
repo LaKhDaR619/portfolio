@@ -9,6 +9,7 @@ const Main: React.FC = () => {
     <main>
       <Home />
       <About />
+      <Skills />
     </main>
   );
 };

@@ -1,31 +1,37 @@
 import styles from "../../../styles/skills.module.css";
-import SkillsItem from "./skillsItem";
+import SkillsSection from "./skillsSection";
 
 const Skills: React.FC = () => {
+  const frontendSkills = [
+    { name: "HTML", percentage: 90 },
+    { name: "CSS", percentage: 80 },
+    { name: "JavaScript", percentage: 70 },
+    { name: "React", percentage: 90 },
+  ];
+
+  const backendSkills = [
+    { name: "NodeJS", percentage: 80 },
+    { name: "PostgreSQL", percentage: 60 },
+    { name: "NestJS", percentage: 60 },
+  ];
+
   return (
     <section className="section" id="skills">
-      <h2 className="section-title">Skills</h2>
-
-      <div className={`${styles.skillsContainer} grid`}>
+      <h2 className="section__title">Skills</h2>
+      <span className="section__subtitle">My Technical level</span>
+      <div className={`${styles.skills__container} container grid`}>
         <div>
-          <h2 className={styles.skillsSubtitle}>Professional Skills</h2>
-          <p className={styles.skillsText}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
-            optio id vero amet, alias architecto consectetur error eum eaque
-            sit.
-          </p>
-          <SkillsItem iconName="bxl-html5" title="html" percentage={95} />
-          <SkillsItem iconName="bxl-css3" title="css3" percentage={85} />
-          <SkillsItem
-            iconName="bxl-javascript"
-            title="javascript"
-            percentage={65}
+          <SkillsSection
+            title="Front-end developer"
+            subtitle="More than 4 years"
+            skills={frontendSkills}
+            initialyOpen
           />
-          <SkillsItem iconName="bxs-paint" title="ui / ux" percentage={85} />
-        </div>
-
-        <div>
-          <img src="images/work3.jpg" alt="" className={styles.skillsImg} />
+          <SkillsSection
+            title="Back-end developer"
+            subtitle="More than 2 years"
+            skills={backendSkills}
+          />
         </div>
       </div>
     </section>
