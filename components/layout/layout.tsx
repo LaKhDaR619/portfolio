@@ -2,6 +2,7 @@ import Content from "../main/main";
 import CustomHead from "../head/customHead";
 import Header from "../header/header";
 import Footer from "../footer/footer";
+import Main from "../main/main";
 
 export const siteTitle = "LaKhDaR Portfolio";
 
@@ -12,6 +13,7 @@ const Layout: React.FC<Props> = () => {
     <>
       <CustomHead title={siteTitle} />
       <Header />
+      <Main />
     </>
   );
 };

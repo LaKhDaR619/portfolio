@@ -10,15 +10,15 @@
 :root {
   --hue-color: 250;
 
-  --primary-color: hsl(var(--hue-color, 69%, 61%));
-  --primary-color-alt: hsl(var(--hue-color, 57%, 53%));
-  --primary-color-light: hsl(var(--hue-color, 92%, 85%));
-  --secondary-color: hsl(var(--hue-color, 69%, 61%));
-  --title-color: hsl(var(--hue-color, 8%, 51%));
-  --text-color: hsl(var(--hue-color, 8%, 45%));
-  --text-color-light: hsl(var(--hue-color, 8%, 65%));
-  --input-color: hsl(var(--hue-color, 70%, 96%));
-  --body-color: hsl(var(--hue-color, 60%, 99%));
+  --primary-color: hsl(var(--hue-color), 69%, 61%);
+  --primary-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --primary-color-light: hsl(var(--hue-color), 92%, 85%);
+  --secondary-color: hsl(var(--hue-color), 69%, 61%);
+  --title-color: hsl(var(--hue-color), 8%, 51%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
   --container-color: #fff;
 }
 
@@ -104,6 +104,10 @@ img {
   height: auto;
 }
 /* reusable classes */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
 .container {
   max-width: 768px;
   margin-left: var(--m-1-5);
@@ -124,4 +128,28 @@ img {
 .section__title,
 .section__subtitle {
   text-align: center;
+}
+
+/* buttons */
+.button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+}
+.button:hover {
+  background-color: var(--primary-color-alt);
+}
+
+.button__icon {
+  font-size: 1.25rem;
+  margin-left: var(--m-0-5);
+  transition: 0.3s;
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
 }

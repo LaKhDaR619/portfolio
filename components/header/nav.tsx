@@ -9,7 +9,7 @@ export default function Nav() {
     { href: "skills", name: "Skills", iconName: "uil-file-alt" },
     { href: "services", name: "Services", iconName: "uil-briefcase-alt" },
     { href: "portfolio", name: "Portfolio", iconName: "uil-scenery" },
-    { href: "contact", name: "Contact me", iconName: "uil-message" },
+    { href: "contact", name: "Contact Me", iconName: "uil-message" },
   ];
 
   const [showMenu, toggleShowMenu] = useToggle();
@@ -22,7 +22,7 @@ export default function Nav() {
       <div
         className={`${styles.nav__menu} ${showMenu ? styles["show-menu"] : ""}`}
       >
-        <ul className={`${styles.nav__list} ${styles.grid} `}>
+        <ul className={`${styles.nav__list} grid`}>
           {Items.map((item) => (
             <NavItem
               key={item.name}
