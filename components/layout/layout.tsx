@@ -12,8 +12,6 @@ const Layout: React.FC<Props> = () => {
     <>
       <CustomHead title={siteTitle} />
       <Header />
-      <Content />
-      <Footer />
     </>
   );
 };

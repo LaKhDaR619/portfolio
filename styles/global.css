@@ -104,6 +104,11 @@ img {
   height: auto;
 }
 /* reusable classes */
+.container {
+  max-width: 768px;
+  margin-left: var(--m-1-5);
+  margin-right: var(--m-1-5);
+}
 .section {
   padding: 2rem 0 4rem;
 }

@@ -3,7 +3,7 @@ import Nav from "./nav";
 
 export default function Header() {
   return (
-    <header className={styles.lHeader}>
+    <header className={styles.header}>
       <Nav />
     </header>
   );
