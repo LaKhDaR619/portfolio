@@ -1,5 +1,5 @@
 import styles from "../../../styles/qualification.module.css";
-import QualificationItem from "./qualificationItem";
+import QualificationsItem from "./qualificationsItem";
 import { Qualification } from "./types";
 
 type Props = {
@@ -17,7 +17,7 @@ const QualificationSection: React.FC<Props> = ({
       style={{ display: isSelected ? "block" : "none" }}
     >
       {qualifications.map((item, index) => (
-        <QualificationItem
+        <QualificationsItem
           title={item.title}
           subtitle={item.subtitle}
           date={item.date}

@@ -1,6 +1,6 @@
 import About from "./about/about";
 import Home from "./home/home";
-import Qualification from "./qualification/qualification";
+import Qualifications from "./qualifications/qualifications";
 import Skills from "./skills/skills";
 
 const Main: React.FC = () => {
@@ -9,7 +9,7 @@ const Main: React.FC = () => {
       <Home />
       <About />
       <Skills />
-      <Qualification />
+      <Qualifications />
     </main>
   );
 };

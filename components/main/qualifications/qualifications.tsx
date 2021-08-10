@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "../../../styles/qualification.module.css";
-import QualificationSection from "./qualificationSection";
+import QualificationsSection from "./qualificationSections";
 
 const Qualification: React.FC = () => {
   const educationQualifications = [
@@ -65,11 +65,11 @@ const Qualification: React.FC = () => {
         </div>
 
         <div className={styles.qualification__sections}>
-          <QualificationSection
+          <QualificationsSection
             qualifications={educationQualifications}
             isSelected={selectedTab === "education"}
           />
-          <QualificationSection
+          <QualificationsSection
             qualifications={workQualifications}
             isSelected={selectedTab === "work"}
           />
