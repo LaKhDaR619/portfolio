@@ -5,6 +5,7 @@ import Project from "./projects/project";
 import Qualifications from "./qualifications/qualifications";
 import Services from "./services/services";
 import Skills from "./skills/skills";
+import Testimonial from "./testimonial/testimonial";
 
 const Main: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const Main: React.FC = () => {
       <Services />
       <Portfolio />
       <Project />
+      <Testimonial />
     </main>
   );
 };
