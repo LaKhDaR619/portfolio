@@ -1,3 +1,4 @@
+import { MouseEventHandler, useRef } from "react";
 import { useToggle } from "../../../hooks/useToggle";
 import styles from "../../../styles/services.module.css";
 
@@ -9,6 +10,12 @@ type Props = {
 
 const ServicesSection: React.FC<Props> = ({ icon, title, items }) => {
   const [isOpen, toggleOpen] = useToggle();
+
+  const modalRef = useRef<HTMLDivElement>();
+
+  const handleModalClose: MouseEventHandler<HTMLDivElement> = (e) => {
+    if (modalRef.current === e.target) toggleOpen();
+  };
 
   return (
     <div className={styles.services__content}>
@@ -33,6 +40,8 @@ const ServicesSection: React.FC<Props> = ({ icon, title, items }) => {
         className={`${styles.services__modal} ${
           isOpen ? styles["active-modal"] : ""
         }`}
+        ref={modalRef}
+        onClick={handleModalClose}
       >
         <div className={styles["services__modal-content"]}>
           <h4 className={styles["services__modal-title"]}>
