@@ -1,8 +1,7 @@
 import About from "./about/about";
-import Contact from "./contact/contact";
 import Home from "./home/home";
+import Qualification from "./qualification/qualification";
 import Skills from "./skills/skills";
-import Work from "./work/work";
 
 const Main: React.FC = () => {
   return (
@@ -10,6 +9,7 @@ const Main: React.FC = () => {
       <Home />
       <About />
       <Skills />
+      <Qualification />
     </main>
   );
 };
