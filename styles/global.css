@@ -168,6 +168,15 @@ img {
   color: var(--primary-color-alt);
 }
 
+.button--white {
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
+.button--white:hover {
+  background-color: #fff;
+}
+
 /* swiper */
 div.swiper-button-prev::after,
 div.swiper-button-next::after {
