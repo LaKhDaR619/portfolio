@@ -167,3 +167,36 @@ img {
   background-color: transparent;
   color: var(--primary-color-alt);
 }
+
+/* swiper */
+div.swiper-button-prev::after,
+div.swiper-button-next::after {
+  content: "";
+}
+
+div.swiper-button-prev {
+  left: -0.5rem;
+}
+
+div.swiper-button-next {
+  right: -0.5rem;
+}
+
+div.swiper-pagination {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
+span.swiper-pagination-bullet-active {
+  background-color: var(--primary-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet {
+  outline: none;
+}
