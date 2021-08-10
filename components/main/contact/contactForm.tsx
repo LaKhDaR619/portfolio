@@ -26,11 +26,17 @@ const ContactForm: React.FC = () => {
           <label htmlFor="" className={styles.contact__input}>
             Message
           </label>
-          <textarea name="" id="" cols={0} rows={7} />
+          <textarea
+            name=""
+            id=""
+            cols={0}
+            rows={7}
+            className={styles.contact__input}
+          />
         </div>
 
         <div>
-          <a href="#" className={`button button--flex `}>
+          <a href="#" className={`button button--flex`}>
             Send Message
             <i className={`uil uil-message button__icon`} />
           </a>
