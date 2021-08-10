@@ -36,7 +36,11 @@ const SkillsSection: React.FC<Props> = ({
 
       <div className={`${styles.skills__list} grid`}>
         {skills.map((item) => (
-          <SkillsItem name={item.name} percentage={item.percentage} />
+          <SkillsItem
+            key={item.name}
+            name={item.name}
+            percentage={item.percentage}
+          />
         ))}
       </div>
     </div>

@@ -18,6 +18,7 @@ const QualificationSection: React.FC<Props> = ({
     >
       {qualifications.map((item, index) => (
         <QualificationsItem
+          key={item.title}
           title={item.title}
           subtitle={item.subtitle}
           date={item.date}

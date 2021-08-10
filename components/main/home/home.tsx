@@ -23,7 +23,11 @@ const Home: React.FC = () => {
         <div className={`${styles.home__content} grid`}>
           <div className={styles.home__social}>
             {socialItems.map((item) => (
-              <SocialItem iconName={item.iconName} href={item.href} />
+              <SocialItem
+                key={item.href}
+                iconName={item.iconName}
+                href={item.href}
+              />
             ))}
           </div>
 
