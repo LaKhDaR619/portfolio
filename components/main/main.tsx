@@ -1,7 +1,8 @@
 import About from "./about/about";
+import Contact from "./contact/contact";
 import Home from "./home/home";
 import Portfolio from "./portfolio/protfolio";
-import Project from "./projects/project";
+import Project from "./project/project";
 import Qualifications from "./qualifications/qualifications";
 import Services from "./services/services";
 import Skills from "./skills/skills";
@@ -18,6 +19,7 @@ const Main: React.FC = () => {
       <Portfolio />
       <Project />
       <Testimonial />
+      <Contact />
     </main>
   );
 };
