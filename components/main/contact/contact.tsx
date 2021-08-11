@@ -1,35 +1,35 @@
 import styles from "../../../styles/contact.module.css";
+import ContactForm from "./contactForm";
+import ContactItem from "./contactItem";
 
 const Contact: React.FC = () => {
-  return (
-    <section className="section" id="contact">
-      <h2 className="section-title">Contact</h2>
+  const contactItems = [
+    { icon: "uil-phone", title: "Call Me", subtitle: "+213-665-872-853" },
+    {
+      icon: "uil-map-marker",
+      title: "Location",
+      subtitle: "Algiers, Algeria",
+    },
+    { icon: "uil-phone", title: "Call Me", subtitle: "+213-665-872-853" },
+  ];
 
-      <div className={`${styles.contactContainer} grid`}>
-        <form action="" className={styles.contactForm}>
-          <input
-            type="text"
-            placeholder="Name"
-            className={styles.contactInput}
-          />
-          <input
-            type="mail"
-            placeholder="Email"
-            className={styles.contactInput}
-          />
-          <textarea
-            name=""
-            id=""
-            cols={0}
-            rows={10}
-            className={styles.contactInput}
-          />
-          <input
-            type="button"
-            value="Send"
-            className={`${styles.contactButton} button`}
-          />
-        </form>
+  return (
+    <section className={`${styles.contact} section`} id="contact">
+      <h2 className="section__title">Contact Me</h2>
+      <span className="section__subtitle">Get in touch</span>
+
+      <div className={`${styles.contact__container} container grid`}>
+        <div>
+          {contactItems.map((item, index) => (
+            <ContactItem
+              key={index}
+              icon={item.icon}
+              title={item.title}
+              subtitle={item.subtitle}
+            />
+          ))}
+        </div>
+        <ContactForm />
       </div>
     </section>
   );

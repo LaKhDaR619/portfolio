@@ -3,75 +3,96 @@
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
-  --font-semi: 600;
 }
 
 /*===== Colors =====*/
 :root {
-  --primary-color: #4070f4;
-  --secondary-color: #0e2431;
+  --hue-color: 250;
+
+  --primary-color: hsl(var(--hue-color), 69%, 61%);
+  --primary-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --primary-color-light: hsl(var(--hue-color), 92%, 85%);
+  --secondary-color: hsl(var(--hue-color), 69%, 61%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
+  --container-color: #fff;
 }
 
 /*===== Fonts and Typography =====*/
 :root {
   --body-font: "Poppins", sans-serif;
+
   --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
   --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
 }
-@media screen and (min-width: 768px) {
-  body {
-    margin: 0;
-  }
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
   :root {
-    --header-height: 4rem;
-    --big-font-size: 3.5rem;
-    --h2-font-size: 2rem;
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 813rem;
   }
 }
 
 /*===== Margins =====*/
 :root {
-  --m-1: 0.5rem;
-  --m-2: 1rem;
-  --m-3: 1.5rem;
-  --m-4: 2rem;
-  --m-5: 2.5rem;
-  --m-6: 3rem;
+  --m-0-25: 0.25rem;
+  --m-0-5: 0.5rem;
+  --m-0-75: 0.75rem;
+  --m-1: 1rem;
+  --m-1-5: 1.5rem;
+  --m-2: 2rem;
+  --m-2-5: 2.5rem;
+  --m-3: 3rem;
 }
 
 /*===== Z index =====*/
 :root {
-  --z-back: -10;
-  --z-normal: 1;
   --z-tooltip: 10;
   --z-fixed: 100;
+  --z-modal: 1000;
 }
 
 /*===== Base =====*/
-*,
-::before,
-::after {
+* {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
-  margin: var(--header-height) 0 0 0;
+  margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  color: var(--secondary-color);
+  background-color: var(--body-color);
+  color: var(--text-color);
 }
 h1,
 h2,
-p {
-  margin: 0;
+h3,
+h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
 }
 ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 a {
@@ -80,73 +101,116 @@ a {
 img {
   max-width: 100%;
   height: auto;
-  display: block;
 }
-
-/* Grid */
+/* reusable classes */
 .grid {
-  max-width: 1024px;
   display: grid;
-  grid-template-columns: 100%;
-  grid-column-gap: 2rem;
-  width: calc(100% - 2rem);
-  margin-left: var(--m-2);
-  margin-right: var(--m-2);
+  gap: 1.5rem;
 }
-@media screen and (min-width: 1024px) {
-  .grid {
-    margin-left: auto;
-    margin-right: auto;
-  }
+.container {
+  max-width: 768px;
+  margin-left: var(--m-1-5);
+  margin-right: var(--m-1-5);
+}
+.section {
+  padding: 2rem 0 4rem;
+}
+.section__title {
+  font-size: var(--h1-font-size);
+}
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--m-3);
 }
 
-/* Buttons */
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+/* buttons */
 .button {
   display: inline-block;
   background-color: var(--primary-color);
   color: #fff;
-  padding: 0.75rem 2.5rem;
-  font-weight: var(--font-semi);
+  padding: 1rem;
   border-radius: 0.5rem;
+  font-weight: var(--font-medium);
 }
 .button:hover {
-  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+  background-color: var(--primary-color-alt);
 }
 
-/* Section */
-.section-title {
-  position: relative;
-  font-size: var(--h2-font-size);
-  color: var(--primary-color);
-  margin-top: var(--m-2);
-  margin-bottom: var(--m-4);
-  text-align: center;
+.button__icon {
+  font-size: 1.25rem;
+  margin-left: var(--m-0-5);
+  transition: 0.3s;
 }
-.section-title::after {
-  position: absolute;
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+.button--small {
+  padding: 0.75rem 1rem;
+}
+
+.button--link {
+  padding: 0;
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.button--link:hover {
+  background-color: transparent;
+  color: var(--primary-color-alt);
+}
+
+.button--white {
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
+.button--white:hover {
+  background-color: #fff;
+}
+
+/* swiper */
+div.swiper-button-prev::after,
+div.swiper-button-next::after {
   content: "";
-  width: 64px;
-  height: 0.18rem;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 2rem;
+}
+
+div.swiper-button-prev {
+  left: -0.5rem;
+}
+
+div.swiper-button-next {
+  right: -0.5rem;
+}
+
+div.swiper-pagination {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
+span.swiper-pagination-bullet-active {
   background-color: var(--primary-color);
 }
-.section {
-  padding-top: 3rem;
-  padding-bottom: 2rem;
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet {
+  outline: none;
 }
-@media screen and (min-width: 768px) {
-  .section {
-    padding-top: 4rem;
-    padding-bottom: 3rem;
-  }
-  .section-title {
-    margin-bottom: var(--m-6);
-  }
-  .section-title::after {
-    width: 80px;
-    top: 3rem;
-  }
+
+/* active */
+.active-link {
+  color: var(--primary-color);
 }

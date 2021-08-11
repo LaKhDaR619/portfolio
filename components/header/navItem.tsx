@@ -1,23 +1,30 @@
-import { useToggle } from "../../hooks/useToggle";
 import styles from "../../styles/nav.module.css";
 
 type Props = {
   href: string;
   name: string;
-  active: string;
-  setActive: (value: string) => void;
+  iconName: string;
+  onClick: () => void;
+  isActive: boolean;
 };
 
-const NavItem: React.FC<Props> = ({ href, name, active, setActive }) => {
-  const handleClick = () => setActive(href);
-
+const NavItem: React.FC<Props> = ({
+  href,
+  name,
+  iconName,
+  onClick,
+  isActive,
+}) => {
   return (
-    <li className={styles.navItem}>
+    <li className={styles.nav__item}>
       <a
         href={`#${href}`}
-        className={`${styles.navLink} ${active === href ? styles.active : ""}`}
-        onClick={handleClick}
+        className={`${styles.nav__link} ${styles.nav__icon} ${
+          isActive ? "active-link" : ""
+        }`}
+        onClick={onClick}
       >
+        <i className={`uil ${iconName} ${styles.nav__icon}`} />
         {name}
       </a>
     </li>

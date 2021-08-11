@@ -2,12 +2,13 @@ import styles from "../../../styles/home.module.css";
 
 type Props = {
   iconName: string;
+  href: string;
 };
 
-const SocialItem: React.FC<Props> = ({ iconName }) => {
+const SocialItem: React.FC<Props> = ({ iconName, href }) => {
   return (
-    <a href="" className={styles.homeSocialIcon}>
-      <i className={`bx ${iconName}`} />
+    <a href={href} target="_blank" className={styles["home__social-icon"]}>
+      <i className={`uil ${iconName}`} />
     </a>
   );
 };

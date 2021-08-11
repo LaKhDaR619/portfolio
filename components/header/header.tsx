@@ -1,10 +1,16 @@
 import styles from "../../styles/header.module.css";
 import Nav from "./nav";
 
-export default function Header() {
+type Props = {
+  activeNavItem: string;
+};
+
+const Header: React.FC<Props> = ({ activeNavItem }) => {
   return (
-    <header className={styles.lHeader}>
-      <Nav />
+    <header className={styles.header}>
+      <Nav activeNavItem={activeNavItem} />
     </header>
   );
-}
+};
+
+export default Header;
