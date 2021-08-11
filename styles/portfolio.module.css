@@ -1,4 +1,5 @@
 .portfolio__container {
+  position: relative;
   overflow: initial;
 }
 

@@ -193,7 +193,12 @@ div.swiper-button-next {
   right: -0.5rem;
 }
 
-div.swiper-pagination {
+.swiper-pagination-bullets {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 0.5rem;
 }
 
 span.swiper-pagination-bullet-active {
@@ -246,6 +251,9 @@ body.dark-theme {
     margin-left: var(--m-1);
     margin-right: var(--m-1);
   }
+  .swiper-pagination-bullets {
+    bottom: -2rem;
+  }
 }
 /* medium devices */
 @media screen and (min-width: 768px) {
@@ -262,6 +270,9 @@ body.dark-theme {
   .section__subtitle {
     margin-bottom: 4rem;
   }
+  .swiper-pagination-bullets {
+    bottom: -3rem;
+  }
 }
 /* large devices */
 @media screen and (min-width: 1024px) {
@@ -271,5 +282,8 @@ body.dark-theme {
 
   div.swiper-button-next {
     right: -3.5rem;
+  }
+  .swiper-pagination-bullets {
+    bottom: -4rem;
   }
 }

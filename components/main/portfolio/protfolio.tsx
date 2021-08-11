@@ -27,7 +27,7 @@ const Portfolio: React.FC = () => {
       <div className={`${styles.portfolio__container} container`}>
         <Swiper
           cssMode
-          pagination={{ clickable: true }}
+          pagination={{ el: ".swiper-pagination-bullets", clickable: true }}
           navigation={{
             prevEl: ".swiper-button-prev",
             nextEl: ".swiper-button-next",
@@ -43,17 +43,18 @@ const Portfolio: React.FC = () => {
               />
             </SwiperSlide>
           ))}
-          <div className="swiper-button-next">
-            <i
-              className={`uil uil-angle-right-b ${styles["swiper-portfolio-icon"]}`}
-            />
-          </div>
-          <div className="swiper-button-prev">
-            <i
-              className={`uil uil-angle-left-b ${styles["swiper-portfolio-icon"]}`}
-            />
-          </div>
         </Swiper>
+        <div className="swiper-button-next">
+          <i
+            className={`uil uil-angle-right-b ${styles["swiper-portfolio-icon"]}`}
+          />
+        </div>
+        <div className="swiper-button-prev">
+          <i
+            className={`uil uil-angle-left-b ${styles["swiper-portfolio-icon"]}`}
+          />
+        </div>
+        <div className="swiper-pagination-bullets" />
       </div>
     </>
   );
