@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
   ];
 
   return (
-    <section className={`${styles.contact} section`} id="about">
+    <section className={`${styles.contact} section`} id="contact">
       <h2 className="section__title">Contact Me</h2>
       <span className="section__subtitle">Get in touch</span>
 

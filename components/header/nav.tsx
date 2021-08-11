@@ -2,14 +2,18 @@ import { useToggle } from "../../hooks/useToggle";
 import styles from "../../styles/nav.module.css";
 import NavItem from "./navItem";
 
-export default function Nav() {
+type Props = {
+  activeNavItem: string;
+};
+
+const Nav: React.FC<Props> = ({ activeNavItem }) => {
   const Items = [
     { href: "home", name: "Home", iconName: "uil-estate" },
     { href: "about", name: "About", iconName: "uil-user" },
     { href: "skills", name: "Skills", iconName: "uil-file-alt" },
     { href: "services", name: "Services", iconName: "uil-briefcase-alt" },
     { href: "portfolio", name: "Portfolio", iconName: "uil-scenery" },
-    { href: "contact", name: "Contact Me", iconName: "uil-message" },
+    { href: "contact", name: "Contact", iconName: "uil-message" },
   ];
 
   const [showMenu, toggleShowMenu] = useToggle();
@@ -30,6 +34,7 @@ export default function Nav() {
               name={item.name}
               iconName={item.iconName}
               onClick={toggleShowMenu}
+              isActive={item.href === activeNavItem}
             />
           ))}
         </ul>
@@ -45,4 +50,6 @@ export default function Nav() {
       </div>
     </nav>
   );
-}
+};
+
+export default Nav;

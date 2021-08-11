@@ -2,7 +2,7 @@ import styles from "../../../styles/about.module.css";
 
 const About: React.FC = () => {
   return (
-    <section className="section" id="about">
+    <>
       <h2 className="section__title">About Me</h2>
       <span className="section__subtitle">My Introduction</span>
 
@@ -49,7 +49,7 @@ const About: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
+    </>
   );
 };
 

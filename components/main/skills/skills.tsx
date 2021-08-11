@@ -30,7 +30,7 @@ const Skills: React.FC = () => {
   };
 
   return (
-    <section className="section" id="skills">
+    <>
       <h2 className="section__title">Skills</h2>
       <span className="section__subtitle">My Technical level</span>
       <div className={`${styles.skills__container} container grid`}>
@@ -51,7 +51,7 @@ const Skills: React.FC = () => {
           />
         </div>
       </div>
-    </section>
+    </>
   );
 };
 

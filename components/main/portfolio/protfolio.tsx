@@ -20,7 +20,7 @@ const Portfolio: React.FC = () => {
   ];
 
   return (
-    <section className="section" id="portfolio">
+    <>
       <h2 className="section__title">Portfolio</h2>
       <span className="section__subtitle">Most recent work</span>
 
@@ -57,7 +57,7 @@ const Portfolio: React.FC = () => {
 
         <div className="swiper-pagination" />
       </div>
-    </section>
+    </>
   );
 };
 

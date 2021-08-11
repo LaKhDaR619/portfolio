@@ -20,7 +20,7 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <section className="section" id="services">
+    <>
       <h2 className="section__title">Services</h2>
       <span className="section__subtitle">What i offer</span>
 
@@ -34,7 +34,7 @@ const Services: React.FC = () => {
           />
         ))}
       </div>
-    </section>
+    </>
   );
 };
 

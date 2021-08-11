@@ -10,7 +10,7 @@ const Testimonial: React.FC = () => {
   ];
 
   return (
-    <section className={`${styles.testimonial} section`} id="services">
+    <>
       <h2 className="section__title">Testimonial</h2>
       <span className="section__subtitle">My client saying</span>
 
@@ -35,7 +35,7 @@ const Testimonial: React.FC = () => {
           ))}
         </Swiper>
       </div>
-    </section>
+    </>
   );
 };
 

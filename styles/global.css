@@ -209,3 +209,8 @@ span.swiper-pagination-bullet-active {
 .swiper-pagination-bullet {
   outline: none;
 }
+
+/* active */
+.active-link {
+  color: var(--primary-color);
+}
