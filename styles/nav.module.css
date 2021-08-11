@@ -72,3 +72,19 @@ nav.nav {
 .show-menu {
   bottom: 0;
 }
+
+.nav__btns {
+  display: flex;
+  align-items: center;
+}
+
+.change-theme {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--m-1);
+  cursor: pointer;
+}
+
+.change-theme:hover {
+  color: var(--primary-color);
+}

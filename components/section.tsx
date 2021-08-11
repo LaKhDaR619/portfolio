@@ -21,13 +21,6 @@ const Section: React.FC<Props> = ({
     const sectionHeight = ref.current.offsetHeight;
     const sectionTop = ref.current.offsetTop - 50;
 
-    if (id === "contact") {
-      console.log(id);
-      console.log(currPos.y);
-      console.log(sectionTop);
-      console.log(sectionTop + sectionHeight);
-    }
-
     if (
       currPos.y * -1 > sectionTop &&
       currPos.y * -1 <= sectionTop + sectionHeight

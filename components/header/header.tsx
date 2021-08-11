@@ -5,9 +5,11 @@ import Nav from "./nav";
 
 type Props = {
   activeNavItem: string;
+  theme: "dark" | "light";
+  setTheme: (theme: "dark" | "light") => void;
 };
 
-const Header: React.FC<Props> = ({ activeNavItem }) => {
+const Header: React.FC<Props> = ({ activeNavItem, theme, setTheme }) => {
   const [showScrollHeader, setShowScrollHeader] = useState(false);
 
   useScrollPosition(({ prevPos, currPos }) => {
@@ -20,7 +22,7 @@ const Header: React.FC<Props> = ({ activeNavItem }) => {
         showScrollHeader ? styles.scroll__header : ""
       }`}
     >
-      <Nav activeNavItem={activeNavItem} />
+      <Nav activeNavItem={activeNavItem} theme={theme} setTheme={setTheme} />
     </header>
   );
 };
