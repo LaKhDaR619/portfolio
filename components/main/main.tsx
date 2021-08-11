@@ -1,3 +1,4 @@
+import styles from "../../styles/main.module.css";
 import Section from "../section";
 import About from "./about/about";
 import Contact from "./contact/contact";
@@ -15,7 +16,7 @@ type Props = {
 
 const Main: React.FC<Props> = ({ setActiveNavItem }) => {
   return (
-    <main>
+    <main className={styles.main}>
       <Section
         className="section"
         id="home"

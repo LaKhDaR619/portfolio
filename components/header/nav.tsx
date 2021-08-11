@@ -4,9 +4,11 @@ import NavItem from "./navItem";
 
 type Props = {
   activeNavItem: string;
+  theme: "dark" | "light";
+  setTheme: (theme: "dark" | "light") => void;
 };
 
-const Nav: React.FC<Props> = ({ activeNavItem }) => {
+const Nav: React.FC<Props> = ({ activeNavItem, theme, setTheme }) => {
   const Items = [
     { href: "home", name: "Home", iconName: "uil-estate" },
     { href: "about", name: "About", iconName: "uil-user" },
@@ -17,6 +19,10 @@ const Nav: React.FC<Props> = ({ activeNavItem }) => {
   ];
 
   const [showMenu, toggleShowMenu] = useToggle();
+
+  const handleToggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
 
   return (
     <nav className={`${styles.nav} container`}>
@@ -43,7 +49,13 @@ const Nav: React.FC<Props> = ({ activeNavItem }) => {
           onClick={toggleShowMenu}
         />
       </div>
-      <div>
+      <div className={styles.nav__btns}>
+        <i
+          className={`uil ${theme === "dark" ? "uil-moon" : "uil-sun"} ${
+            styles["change-theme"]
+          }`}
+          onClick={handleToggleTheme}
+        />
         <div className={styles.nav__toggle} onClick={toggleShowMenu}>
           <i className="uil uil-apps" />
         </div>

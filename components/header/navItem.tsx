@@ -19,9 +19,7 @@ const NavItem: React.FC<Props> = ({
     <li className={styles.nav__item}>
       <a
         href={`#${href}`}
-        className={`${styles.nav__link} ${styles.nav__icon} ${
-          isActive ? "active-link" : ""
-        }`}
+        className={`${styles.nav__link} ${isActive ? "active-link" : ""}`}
         onClick={onClick}
       >
         <i className={`uil ${iconName} ${styles.nav__icon}`} />

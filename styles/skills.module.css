@@ -19,7 +19,7 @@
   margin-right: var(--m-0-75);
 }
 
-.skills__titles {
+.skills__title {
   font-size: var(--h3-font-size);
 }
 
@@ -76,4 +76,20 @@ div.skills__list {
 
 .skills__open .skills__arrow {
   transform: rotate(180deg);
+}
+
+/* small devices */
+@media screen and (max-width: 350px) {
+  .skills__title {
+    font-size: var(--normal-font-size);
+  }
+}
+/* medium devices */
+@media screen and (min-width: 568px) {
+  .skills__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  div.skills__list {
+    padding-left: 0;
+  }
 }
