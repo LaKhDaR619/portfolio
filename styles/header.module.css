@@ -19,3 +19,9 @@
     padding: 0 1rem;
   }
 }
+/* large devices */
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 0;
+  }
+}

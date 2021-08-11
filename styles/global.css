@@ -48,7 +48,7 @@
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
     --small-font-size: 0.875rem;
-    --smaller-font-size: 813rem;
+    --smaller-font-size: 0.813rem;
   }
 }
 
@@ -261,5 +261,15 @@ body.dark-theme {
   }
   .section__subtitle {
     margin-bottom: 4rem;
+  }
+}
+/* large devices */
+@media screen and (min-width: 1024px) {
+  div.swiper-button-prev {
+    left: -3.5rem;
+  }
+
+  div.swiper-button-next {
+    right: -3.5rem;
   }
 }

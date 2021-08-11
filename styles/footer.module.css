@@ -80,3 +80,9 @@
     margin-top: 4.5rem;
   }
 }
+/* large devices */
+@media screen and (min-width: 1024px) {
+  .footer__container {
+    padding: 0;
+  }
+}

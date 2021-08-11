@@ -120,3 +120,12 @@
     margin-left: 3rem;
   }
 }
+/* large devices */
+@media screen and (min-width: 1024px) {
+  .home__blob {
+    width: 320x;
+  }
+  .home__social {
+    transform: translateX(-6rem);
+  }
+}

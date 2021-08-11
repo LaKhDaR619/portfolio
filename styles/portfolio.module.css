@@ -2,7 +2,7 @@
   overflow: initial;
 }
 
-.portfolio__content {
+div.portfolio__content {
   padding: 0 1.5rem;
 }
 
@@ -32,7 +32,7 @@
 
 /* medium devices */
 @media screen and (min-width: 568px) {
-  .portfolio__content {
+  div.portfolio__content {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -43,5 +43,14 @@
   }
   .portfolio__content {
     align-items: center;
+  }
+}
+/* large devices */
+@media screen and (min-width: 1024px) {
+  div.portfolio__content {
+    column-gap: 5rem;
+  }
+  .swiper-portfolio-icon {
+    font-size: 3.5rem;
   }
 }
