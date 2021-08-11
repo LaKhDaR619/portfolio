@@ -3,6 +3,7 @@ import Header from "../header/header";
 import Footer from "../footer/footer";
 import Main from "../main/main";
 import { useState } from "react";
+import ScrollUp from "./scrollup";
 
 export const siteTitle = "LaKhDaR Portfolio";
 
@@ -17,6 +18,7 @@ const Layout: React.FC<Props> = () => {
       <Header activeNavItem={activeNavItem} />
       <Main setActiveNavItem={setActiveNavItem} />
       <Footer />
+      <ScrollUp />
     </>
   );
 };
