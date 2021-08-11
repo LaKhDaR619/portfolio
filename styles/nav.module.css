@@ -40,6 +40,15 @@ nav.nav {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
+@media screen and (max-width: 350px) {
+  .nav__menu {
+    padding: 2rem 0.25rem 4rem;
+  }
+
+  .nav__list {
+    column-gap: 0;
+  }
+}
 
 .nav__link {
   display: flex;

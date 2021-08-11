@@ -27,7 +27,7 @@ const SkillsSection: React.FC<Props> = ({
       <div className={styles.skills__header} onClick={OpenSection}>
         <i className={`uil uil-brackets-curly ${styles.skills__icon}`} />
         <div>
-          <h1 className={styles.skills__titles}>{title}</h1>
+          <h1 className={styles.skills__title}>{title}</h1>
           <span className={styles.skills__subtitle}>{subtitle}</span>
         </div>
 

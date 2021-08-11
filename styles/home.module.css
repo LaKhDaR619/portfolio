@@ -26,6 +26,15 @@
   width: 200px;
   fill: var(--primary-color);
 }
+@media screen and (max-width: 350px) {
+  .home__content {
+    grid-template-columns: 0.25fr 3fr;
+  }
+
+  .home__blob {
+    width: 180px;
+  }
+}
 
 .home__blob-img {
   width: 170px;

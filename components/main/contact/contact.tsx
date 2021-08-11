@@ -6,11 +6,15 @@ const Contact: React.FC = () => {
   const contactItems = [
     { icon: "uil-phone", title: "Call Me", subtitle: "+213-665-872-853" },
     {
+      icon: "uil-envelope",
+      title: "Email",
+      subtitle: "lakhdar.boudina@gmail.com",
+    },
+    {
       icon: "uil-map-marker",
       title: "Location",
       subtitle: "Algiers, Algeria",
     },
-    { icon: "uil-phone", title: "Call Me", subtitle: "+213-665-872-853" },
   ];
 
   return (
