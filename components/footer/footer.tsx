@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <a href="#contact" className={styles.footer__link}>
-                Contact Me
+                Contact
               </a>
             </li>
           </ul>

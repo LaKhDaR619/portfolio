@@ -18,7 +18,7 @@ const TestimonialItem: React.FC<Props> = ({ image, name }) => {
           </div>
         </div>
 
-        <div>
+        <div style={{ display: "flex" }}>
           {[...new Array(5)].map((_, index) => (
             <i
               key={index}

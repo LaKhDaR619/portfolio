@@ -27,7 +27,7 @@ const Portfolio: React.FC = () => {
       <div className={`${styles.portfolio__container} container`}>
         <Swiper
           cssMode
-          pagination={{ el: ".swiper-pagination", clickable: true }}
+          pagination={{ clickable: true }}
           navigation={{
             prevEl: ".swiper-button-prev",
             nextEl: ".swiper-button-next",
@@ -54,8 +54,6 @@ const Portfolio: React.FC = () => {
             />
           </div>
         </Swiper>
-
-        <div className="swiper-pagination" />
       </div>
     </>
   );

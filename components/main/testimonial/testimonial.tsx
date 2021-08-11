@@ -14,7 +14,7 @@ const Testimonial: React.FC = () => {
       <h2 className="section__title">Testimonial</h2>
       <span className="section__subtitle">My client saying</span>
 
-      <div className={`${styles.testimonial__container} container`}>
+      <div className="container">
         <Swiper
           loop
           grabCursor

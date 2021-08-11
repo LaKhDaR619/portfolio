@@ -44,3 +44,10 @@
   outline: none;
   padding: 0.25rem 0.5rem 0.5rem 0;
 }
+
+/* medium devices */
+@media screen and (min-width: 568px) {
+  .contact__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

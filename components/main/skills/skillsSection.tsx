@@ -7,24 +7,14 @@ type Props = {
   title: string;
   subtitle: string;
   skills: Skill[];
-  isOpen: boolean;
-  OpenSection: () => void;
 };
 
-const SkillsSection: React.FC<Props> = ({
-  isOpen,
-  title,
-  subtitle,
-  skills,
-  OpenSection,
-}) => {
+const SkillsSection: React.FC<Props> = ({ title, subtitle, skills }) => {
+  const [isOpen, toggleOpen] = useToggle();
+
   return (
-    <div
-      className={`${styles.skills__content} ${
-        isOpen ? styles.skills__open : styles.skills__close
-      }`}
-    >
-      <div className={styles.skills__header} onClick={OpenSection}>
+    <div className={`${isOpen ? styles.skills__open : styles.skills__close}`}>
+      <div className={styles.skills__header} onClick={toggleOpen}>
         <i className={`uil uil-brackets-curly ${styles.skills__icon}`} />
         <div>
           <h1 className={styles.skills__title}>{title}</h1>

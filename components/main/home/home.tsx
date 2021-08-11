@@ -82,7 +82,7 @@ const Home: React.FC = () => {
         >
           <i className={`uil uil-mouse-alt ${styles["home__scroll-mouse"]}`} />
           <span className={styles["home__scroll-name"]}>Scroll down</span>
-          <i className={`uil uil-arrow-down ${styles["home__scroll-arrow"]}`} />
+          <i className={`uil uil-arrow-down`} />
         </a>
       </div>
     </div>

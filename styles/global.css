@@ -194,12 +194,6 @@ div.swiper-button-next {
 }
 
 div.swiper-pagination {
-  justify-content: center;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  margin-top: 1rem;
 }
 
 span.swiper-pagination-bullet-active {
@@ -246,9 +240,26 @@ body.dark-theme {
 }
 
 /* media queries */
+/* small devices */
 @media screen and (max-width: 350px) {
   .container {
     margin-left: var(--m-1);
     margin-right: var(--m-1);
+  }
+}
+/* medium devices */
+@media screen and (min-width: 768px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body {
+    margin: 0;
+  }
+  .section {
+    padding: 6rem 0 2rem;
+  }
+  .section__subtitle {
+    margin-bottom: 4rem;
   }
 }
