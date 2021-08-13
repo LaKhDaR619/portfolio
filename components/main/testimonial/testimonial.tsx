@@ -27,7 +27,7 @@ const Testimonial: React.FC = () => {
           {testimonialItems.map((item, index) => (
             <SwiperSlide>
               <TestimonialItem
-                key={index}
+                key={item.name}
                 image={item.image}
                 name={item.name}
               />

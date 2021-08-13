@@ -21,7 +21,9 @@ const Nav: React.FC<Props> = ({ activeNavItem, theme, setTheme }) => {
   const [showMenu, toggleShowMenu] = useToggle();
 
   const handleToggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    const newTheme = theme === "dark" ? "light" : "dark";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
   };
 
   return (
