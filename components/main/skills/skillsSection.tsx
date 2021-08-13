@@ -1,5 +1,6 @@
-import SkillsItem from "./skillsItem";
 import styles from "../../../styles/skills.module.css";
+import { v4 as uuidv4 } from "uuid";
+import SkillsItem from "./skillsItem";
 import { Skill } from "./types";
 import { useToggle } from "../../../hooks/useToggle";
 
@@ -27,7 +28,7 @@ const SkillsSection: React.FC<Props> = ({ title, subtitle, skills }) => {
       <div className={`${styles.skills__list} grid`}>
         {skills.map((item) => (
           <SkillsItem
-            key={item.name}
+            key={uuidv4()}
             name={item.name}
             percentage={item.percentage}
           />

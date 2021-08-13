@@ -1,4 +1,5 @@
 import styles from "../../../styles/qualification.module.css";
+import { v4 as uuidv4 } from "uuid";
 import QualificationsItem from "./qualificationsItem";
 import { Qualification } from "./types";
 
@@ -18,7 +19,7 @@ const QualificationSection: React.FC<Props> = ({
     >
       {qualifications.map((item, index) => (
         <QualificationsItem
-          key={item.title}
+          key={uuidv4()}
           title={item.title}
           subtitle={item.subtitle}
           date={item.date}

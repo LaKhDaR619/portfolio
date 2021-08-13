@@ -1,6 +1,7 @@
+import styles from "../../../styles/services.module.css";
+import { v4 as uuidv4 } from "uuid";
 import { MouseEventHandler, useRef } from "react";
 import { useToggle } from "../../../hooks/useToggle";
-import styles from "../../../styles/services.module.css";
 
 type Props = {
   icon: string;
@@ -54,7 +55,7 @@ const ServicesSection: React.FC<Props> = ({ icon, title, items }) => {
 
           <ul className={`${styles["services__modal-services"]} grid`}>
             {items.map((item, index) => (
-              <li key={index} className={styles["services__modal-service"]}>
+              <li key={uuidv4()} className={styles["services__modal-service"]}>
                 <i
                   className={`uil uil-check-circle ${styles["services__modal-icon"]}`}
                 />

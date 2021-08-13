@@ -1,5 +1,6 @@
-import { useToggle } from "../../hooks/useToggle";
 import styles from "../../styles/nav.module.css";
+import { v4 as uuidv4 } from "uuid";
+import { useToggle } from "../../hooks/useToggle";
 import NavItem from "./navItem";
 
 type Props = {
@@ -21,7 +22,9 @@ const Nav: React.FC<Props> = ({ activeNavItem, theme, setTheme }) => {
   const [showMenu, toggleShowMenu] = useToggle();
 
   const handleToggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    const newTheme = theme === "dark" ? "light" : "dark";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
   };
 
   return (
@@ -35,7 +38,7 @@ const Nav: React.FC<Props> = ({ activeNavItem, theme, setTheme }) => {
         <ul className={`${styles.nav__list} grid`}>
           {Items.map((item) => (
             <NavItem
-              key={item.name}
+              key={uuidv4()}
               href={item.href}
               name={item.name}
               iconName={item.iconName}

@@ -1,4 +1,5 @@
 import styles from "../../../styles/portfolio.module.css";
+import { v4 as uuidv4 } from "uuid";
 import PortfolioItem from "./portfolioItem";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -35,7 +36,7 @@ const Portfolio: React.FC = () => {
           loop
         >
           {portfolioItems.map((item, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={uuidv4()}>
               <PortfolioItem
                 image={item.image}
                 title={item.title}
