@@ -1,5 +1,5 @@
 import styles from "../../../styles/home.module.css";
-import Section from "../../section";
+import { v4 as uuidv4 } from "uuid";
 import SocialItem from "./socialItem";
 
 const Home: React.FC = () => {
@@ -24,7 +24,7 @@ const Home: React.FC = () => {
         <div className={styles.home__social}>
           {socialItems.map((item) => (
             <SocialItem
-              key={item.href}
+              key={uuidv4()}
               iconName={item.iconName}
               href={item.href}
             />

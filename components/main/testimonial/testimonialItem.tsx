@@ -1,4 +1,5 @@
 import styles from "../../../styles/testimonial.module.css";
+import { v4 as uuidv4 } from "uuid";
 
 type Props = {
   image: string;
@@ -21,7 +22,7 @@ const TestimonialItem: React.FC<Props> = ({ image, name }) => {
         <div style={{ display: "flex" }}>
           {[...new Array(5)].map((_, index) => (
             <i
-              key={index}
+              key={uuidv4()}
               className={`uil uil-star ${styles["testimonial__icon-star"]}`}
             />
           ))}

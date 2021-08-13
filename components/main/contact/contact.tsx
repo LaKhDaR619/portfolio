@@ -1,4 +1,5 @@
 import styles from "../../../styles/contact.module.css";
+import { v4 as uuidv4 } from "uuid";
 import ContactForm from "./contactForm";
 import ContactItem from "./contactItem";
 
@@ -26,7 +27,7 @@ const Contact: React.FC = () => {
         <div>
           {contactItems.map((item, index) => (
             <ContactItem
-              key={index}
+              key={uuidv4()}
               icon={item.icon}
               title={item.title}
               subtitle={item.subtitle}

@@ -1,4 +1,5 @@
 import styles from "../../../styles/services.module.css";
+import { v4 as uuidv4 } from "uuid";
 import ServicesSection from "./servicesSection";
 
 const Services: React.FC = () => {
@@ -27,7 +28,7 @@ const Services: React.FC = () => {
       <div className={`${styles.services__container} container grid`}>
         {servicesSections.map((section) => (
           <ServicesSection
-            key={section.icon}
+            key={uuidv4()}
             icon={section.icon}
             title={section.title}
             items={section.items}

@@ -1,5 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
 import { Swiper, SwiperSlide } from "swiper/react";
-import styles from "../../../styles/testimonial.module.css";
 import TestimonialItem from "./testimonialItem";
 
 const Testimonial: React.FC = () => {
@@ -27,7 +27,7 @@ const Testimonial: React.FC = () => {
           {testimonialItems.map((item, index) => (
             <SwiperSlide>
               <TestimonialItem
-                key={item.name}
+                key={uuidv4()}
                 image={item.image}
                 name={item.name}
               />
