@@ -1,4 +1,5 @@
 import Layout from "../components/layout/layout";
+import "../assets/remixicons/remixicon.css";
 import "../styles/global.css";
 
 import "swiper/swiper-bundle.css";
