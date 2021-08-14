@@ -11,12 +11,15 @@ const Portfolio: React.FC = () => {
       title: "Portfolio",
       description:
         "migrated this protfolio from html, css, vanillaJS to fully modular nextJS project.",
+      buttonText: "Code",
+      link: "https://github.com/LaKhDaR619/portfolio",
     },
     {
       image: "images/portfolio2.jpg",
       title: "Docta",
       description:
-        "managed two backends, and created pixel-perfect dashboard front end for the docta project.",
+        "created a backend from scratch and managed it along another backend, created pixel-perfect dashboard front end for the docta project.",
+      link: "https://play.google.com/store/apps/details?id=io.cleverzone.docta",
     },
   ];
 
@@ -41,6 +44,8 @@ const Portfolio: React.FC = () => {
                 image={item.image}
                 title={item.title}
                 description={item.description}
+                buttonText={item.buttonText}
+                link={item.link}
               />
             </SwiperSlide>
           ))}

@@ -66,7 +66,7 @@ const Home: React.FC = () => {
           <h1 className={styles.home__title}>Hi, I'am LaKhDaR</h1>
           <h3 className={styles.home__subtitle}>Software Engineer</h3>
           <p className={styles.home__description}>
-            Highly experienced in web development, producing quality code.
+            Highly experienced Software Engineer, producing quality code.
           </p>
           <a href="#contact" className="button button--flex">
             Contact Me

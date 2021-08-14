@@ -4,25 +4,28 @@ type Props = {
   title: string;
   subtitle: string;
   date: string;
-  first?: boolean;
-  last?: boolean;
+  index: number;
+  length: number;
 };
 
 const QualificationItem: React.FC<Props> = ({
   title,
   subtitle,
   date,
-  first = false,
-  last = false,
+  index,
+  length,
 }) => {
+  const isToTheLeft = index % 2 === 0;
+  const isLast = index === length - 1;
+
   return (
     <div className={styles.qualification__data}>
-      {!first && (
+      {!isToTheLeft && (
         <>
           <div />
           <div>
             <span className={styles.qualification__circle} />
-            {!last && <span className={styles.qualification__line} />}
+            {!isLast && <span className={styles.qualification__line} />}
           </div>
         </>
       )}
@@ -36,10 +39,10 @@ const QualificationItem: React.FC<Props> = ({
         </div>
       </div>
 
-      {first && (
+      {isToTheLeft && (
         <div>
           <span className={styles.qualification__circle} />
-          <span className={styles.qualification__line} />
+          {!isLast && <span className={styles.qualification__line} />}
         </div>
       )}
     </div>
