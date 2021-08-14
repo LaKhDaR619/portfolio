@@ -14,9 +14,19 @@ const Qualification: React.FC = () => {
       subtitle: "Ziane Achour University - Algeria",
       date: "2016 - 2018",
     },
+    {
+      title: "Learning Everything",
+      subtitle: "From everyone",
+      date: "1994 - Current",
+    },
   ];
 
   const workQualifications = [
+    {
+      title: "Freelancer (Web, Mobile Development)",
+      subtitle: "Upwork, Freelancer",
+      date: "2015 - Current",
+    },
     {
       title: "Temporary university Teacher (Mobile Development)",
       subtitle: "Ziane Achour University - Algeria",

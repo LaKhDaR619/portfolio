@@ -15,21 +15,21 @@ const About: React.FC = () => {
           </p>
           <div className={styles.about__info}>
             <div>
-              <span className={styles["about__info-title"]}>08+</span>
+              <span className={styles["about__info-title"]}>04+</span>
               <span className={styles["about__info-name"]}>
                 Years <br />
                 experience
               </span>
             </div>
             <div>
-              <span className={styles["about__info-title"]}>20+</span>
+              <span className={styles["about__info-title"]}>08+</span>
               <span className={styles["about__info-name"]}>
                 Completed <br />
                 projects
               </span>
             </div>
             <div>
-              <span className={styles["about__info-title"]}>05+</span>
+              <span className={styles["about__info-title"]}>01+</span>
               <span className={styles["about__info-name"]}>
                 Companies <br />
                 worked

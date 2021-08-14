@@ -23,8 +23,8 @@ const QualificationSection: React.FC<Props> = ({
           title={item.title}
           subtitle={item.subtitle}
           date={item.date}
-          first={index === 0}
-          last={index === qualifications.length - 1}
+          index={index}
+          length={qualifications.length}
         />
       ))}
     </div>

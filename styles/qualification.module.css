@@ -39,6 +39,9 @@
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
 }
+.qualification__calendar i {
+  margin-right: 0.3rem;
+}
 
 .qualification__circle {
   display: inline-block;
