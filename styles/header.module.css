@@ -1,9 +1,27 @@
-.lHeader {
+.header {
   width: 100%;
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  background-color: var(--body-color);
+}
+
+.scroll__header {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* medium devices */
+@media screen and (min-width: 768px) {
+  .header {
+    top: 0;
+    bottom: initial;
+    padding: 0 1rem;
+  }
+}
+/* large devices */
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 0;
+  }
 }
