@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+    <font id="remixicon" horiz-adv-x="1200">
+    <font-face font-family="remixicon"
+        units-per-em="1200" ascent="1200"
+        descent="0" />
+    <missing-glyph horiz-adv-x="0" /><glyph glyph-name="stack-overflow-line"
+            unicode="&#xF183;"
+            horiz-adv-x="1200" d="M900 199.9000000000001V450H1000V99.9000000000001H200V450H300V199.9000000000001H900zM375 300V400H825V300H375zM378.85 519L396.2 617.5L839.4 539.3499999999999L822.0000000000001 440.8499999999999L378.8500000000001 519zM460.55 794.1999999999999L510.55 880.8L900.25 655.8L850.25 569.2L460.55 794.2zM631.4 1024.85L708 1089.1499999999999L997.25 744.4L920.65 680.15L631.4 1024.85z" /></font></defs></svg>

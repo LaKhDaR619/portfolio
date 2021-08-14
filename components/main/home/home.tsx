@@ -9,8 +9,8 @@ const Home: React.FC = () => {
       href: "https://www.linkedin.com/in/lakhdar-ben-boudina-5a276b193/",
     },
     {
-      iconName: "uil-dribbble",
-      href: "",
+      iconName: "ri-stack-overflow-line",
+      href: "https://stackoverflow.com/users/8734108/lakhdar",
     },
     {
       iconName: "uil-github-alt",
