@@ -1,4 +1,5 @@
 import styles from "../../styles/nav.module.css";
+import Slider from "./slider";
 import { v4 as uuidv4 } from "uuid";
 import { useToggle } from "../../hooks/useToggle";
 import NavItem from "./navItem";
@@ -32,6 +33,7 @@ const Nav: React.FC<Props> = ({ activeNavItem, theme, setTheme }) => {
       <a href="#" className={styles.nav__logo}>
         LaKhDaR
       </a>
+      <Slider />
       <div
         className={`${styles.nav__menu} ${showMenu ? styles["show-menu"] : ""}`}
       >

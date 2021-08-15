@@ -38,7 +38,7 @@ const Portfolio: React.FC = () => {
           }}
           loop
         >
-          {portfolioItems.map((item, index) => (
+          {portfolioItems.map((item) => (
             <SwiperSlide key={uuidv4()}>
               <PortfolioItem
                 image={item.image}

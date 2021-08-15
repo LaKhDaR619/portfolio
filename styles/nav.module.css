@@ -89,6 +89,10 @@ ul.nav__list {
   color: var(--primary-color);
 }
 
+.slider__container {
+  padding: 0 2rem;
+}
+
 /* small devices */
 @media screen and (max-width: 350px) {
   .nav__menu {
