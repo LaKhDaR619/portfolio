@@ -13,7 +13,10 @@ const Slider: React.FC = () => {
 
   useEffect(() => {
     const storedHue = localStorage.getItem("hue");
-    if (storedHue) setHue(Number.parseInt(storedHue, 10));
+    if (storedHue) {
+      setHue(Number.parseInt(storedHue, 10));
+      document.body.style.setProperty("--hue-color", storedHue);
+    }
   }, []);
 
   return (
