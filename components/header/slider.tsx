@@ -23,10 +23,11 @@ const Slider: React.FC = () => {
         xmax={360}
         onChange={handleHueChange}
         styles={{
-          track: {
-            width: "100px",
+          active: {
+            backgroundColor: "var(--primary-color)",
           },
         }}
+        className={styles.slider}
       />
     </div>
   );
