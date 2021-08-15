@@ -27,6 +27,7 @@ const Slider: React.FC = () => {
             backgroundColor: "var(--primary-color)",
           },
         }}
+        // @ts-ignore
         className={styles.slider}
       />
     </div>
