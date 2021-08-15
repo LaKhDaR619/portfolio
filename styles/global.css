@@ -228,6 +228,16 @@ body.dark-theme {
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 
+/* hue slider */
+.slider__container {
+  display: none;
+  padding: 0 2rem;
+}
+
+body.dark-theme .slider__container {
+  display: block;
+}
+
 /* scroll bar */
 ::-webkit-scrollbar {
   width: 0.6rem;
