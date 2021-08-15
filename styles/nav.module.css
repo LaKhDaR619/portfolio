@@ -89,10 +89,6 @@ ul.nav__list {
   color: var(--primary-color);
 }
 
-.slider__container {
-  padding: 0 2rem;
-}
-
 div.slider {
   width: 70px;
 }
