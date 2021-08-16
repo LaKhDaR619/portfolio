@@ -19,6 +19,8 @@ const Slider: React.FC = () => {
     }
   }, []);
 
+  // TODO: make the slider smaller
+
   return (
     <div className="slider__container">
       <InputSlider

@@ -20,8 +20,10 @@ const Services: React.FC = () => {
     },
   ];
 
+  // TODO: change number of services per row
+
   return (
-    <div>
+    <div className={styles.services}>
       <h2 className="section__title">Services</h2>
       <span className="section__subtitle">What i offer</span>
 

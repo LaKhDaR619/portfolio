@@ -23,6 +23,8 @@ const Portfolio: React.FC = () => {
     },
   ];
 
+  // TODO: fill up this section
+
   return (
     <div className={styles.portfolio}>
       <h2 className="section__title">Portfolio</h2>

@@ -30,7 +30,7 @@ const Main: React.FC<Props> = ({ setActiveNavItem }) => {
       <Section id="portfolio" setActiveNavItem={setActiveNavItem}>
         <Portfolio />
       </Section>
-      <Section className="section" id="testimonial">
+      <Section id="testimonial">
         <Testimonial />
       </Section>
       <Section id="contact" setActiveNavItem={setActiveNavItem}>

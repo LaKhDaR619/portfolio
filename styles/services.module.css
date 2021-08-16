@@ -110,6 +110,11 @@
   }
 }
 /* medium devices */
+@media screen and (min-width: 568px) {
+  .services {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 768px) {
   .services__container {
     grid-template-columns: repeat(3, 218px);
