@@ -116,11 +116,10 @@ img {
 }
 .section {
   min-height: 100vh;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
-  /* padding: 2rem 0 4rem; */
-  padding: 0 !important;
+  align-items: center; */
+  padding: 2rem 0 4rem;
 }
 .section__title {
   font-size: var(--h1-font-size);
