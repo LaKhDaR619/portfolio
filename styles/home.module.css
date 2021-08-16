@@ -3,9 +3,13 @@
 }
 
 .home__content {
-  grid-template-columns: 0.5fr 3fr;
-  padding-top: 3.5rem;
+  grid-template-columns: 1fr 3fr;
+  /* padding-top: 3.5rem; */
   align-items: center;
+}
+
+.home__social {
+  justify-self: center;
 }
 
 .home__social {
@@ -80,10 +84,6 @@
 
 /* small devices */
 @media screen and (max-width: 350px) {
-  .home__content {
-    grid-template-columns: 0.25fr 3fr;
-  }
-
   .home__blob {
     width: 180px;
   }
@@ -93,6 +93,7 @@
   .home__content {
     grid-template-columns: max-content 1fr 1fr;
   }
+
   .home__data {
     grid-column: initial;
   }

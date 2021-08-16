@@ -15,6 +15,8 @@ const PortfolioItem: React.FC<Props> = ({
   buttonText = "Demo",
   link = "#",
 }) => {
+  // TODO: portfolio buttons on the same height
+
   return (
     <div className={`${styles.portfolio__content} grid`}>
       <img src={image} alt="" className={styles.portfolio__img} />

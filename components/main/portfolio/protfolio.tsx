@@ -23,8 +23,10 @@ const Portfolio: React.FC = () => {
     },
   ];
 
+  // TODO: fill up this section
+
   return (
-    <>
+    <div className={styles.portfolio}>
       <h2 className="section__title">Portfolio</h2>
       <span className="section__subtitle">Most recent work</span>
 
@@ -62,7 +64,7 @@ const Portfolio: React.FC = () => {
         </div>
         <div className="swiper-pagination-bullets" />
       </div>
-    </>
+    </div>
   );
 };
 

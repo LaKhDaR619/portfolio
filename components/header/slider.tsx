@@ -13,7 +13,10 @@ const Slider: React.FC = () => {
 
   useEffect(() => {
     const storedHue = localStorage.getItem("hue");
-    if (storedHue) setHue(Number.parseInt(storedHue, 10));
+    if (storedHue) {
+      setHue(Number.parseInt(storedHue, 10));
+      document.body.style.setProperty("--hue-color", storedHue);
+    }
   }, []);
 
   return (
@@ -25,6 +28,13 @@ const Slider: React.FC = () => {
         styles={{
           active: {
             backgroundColor: "var(--primary-color)",
+          },
+          track: {
+            height: "6px",
+          },
+          thumb: {
+            width: "10px",
+            height: "10px",
           },
         }}
         // @ts-ignore
