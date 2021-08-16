@@ -16,6 +16,8 @@ const Skills: React.FC = () => {
     { name: "NestJS", percentage: 60 },
   ];
 
+  // TODO: change skills from progress bar to icons
+
   return (
     <div>
       <h2 className="section__title">Skills</h2>

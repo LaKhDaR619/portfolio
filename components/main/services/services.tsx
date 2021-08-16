@@ -1,6 +1,7 @@
 import styles from "../../../styles/services.module.css";
 import { v4 as uuidv4 } from "uuid";
 import ServicesSection from "./servicesSection";
+import Portfolio from "../portfolio/protfolio";
 
 const Services: React.FC = () => {
   const servicesSections = [
@@ -35,6 +36,8 @@ const Services: React.FC = () => {
           />
         ))}
       </div>
+
+      <Portfolio />
     </div>
   );
 };
