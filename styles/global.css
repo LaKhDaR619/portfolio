@@ -199,6 +199,7 @@ div.swiper-button-next {
 
 .swiper-pagination-bullets {
   position: absolute;
+  bottom: -1.5rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -266,15 +267,13 @@ body.dark-theme .slider__container {
     margin-right: var(--m-1);
   }
   .section {
-    display: block;
+    /* display: block; */
   }
   .swiper-pagination-bullets {
     bottom: -2rem;
   }
 }
 /* medium devices */
-@media screen and (min-width: 568px) {
-}
 @media screen and (min-width: 768px) {
   .container {
     margin-left: auto;

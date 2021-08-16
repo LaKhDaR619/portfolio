@@ -1,3 +1,7 @@
+.portfolio {
+  min-width: 0;
+}
+
 .portfolio__container {
   position: relative;
   overflow: initial;

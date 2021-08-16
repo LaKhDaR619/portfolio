@@ -11,7 +11,7 @@ const Testimonial: React.FC = () => {
   ];
 
   return (
-    <div>
+    <div style={{ minWidth: 0 }}>
       <h2 className="section__title">Testimonial</h2>
       <span className="section__subtitle">My client saying</span>
 

@@ -24,7 +24,7 @@ const Portfolio: React.FC = () => {
   ];
 
   return (
-    <div>
+    <div className={styles.portfolio}>
       <h2 className="section__title">Portfolio</h2>
       <span className="section__subtitle">Most recent work</span>
 
