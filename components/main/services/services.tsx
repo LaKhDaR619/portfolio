@@ -21,7 +21,7 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <>
+    <div>
       <h2 className="section__title">Services</h2>
       <span className="section__subtitle">What i offer</span>
 
@@ -35,7 +35,7 @@ const Services: React.FC = () => {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

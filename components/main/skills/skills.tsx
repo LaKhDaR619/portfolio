@@ -1,4 +1,5 @@
 import styles from "../../../styles/skills.module.css";
+import Qualifications from "../qualifications/qualifications";
 import SkillsSection from "./skillsSection";
 
 const Skills: React.FC = () => {
@@ -16,7 +17,7 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <>
+    <div>
       <h2 className="section__title">Skills</h2>
       <span className="section__subtitle">My Technical level</span>
       <div className={`${styles.skills__container} container grid`}>
@@ -31,7 +32,8 @@ const Skills: React.FC = () => {
           skills={backendSkills}
         />
       </div>
-    </>
+      <Qualifications />
+    </div>
   );
 };
 

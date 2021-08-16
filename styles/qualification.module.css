@@ -1,3 +1,7 @@
+.qualification {
+  padding-top: 2rem;
+}
+
 .qualification__tabs {
   display: flex;
   justify-content: space-evenly;

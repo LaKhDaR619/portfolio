@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
   ];
 
   return (
-    <>
+    <div>
       <h2 className="section__title">Contact Me</h2>
       <span className="section__subtitle">Get in touch</span>
 
@@ -36,7 +36,7 @@ const Contact: React.FC = () => {
         </div>
         <ContactForm />
       </div>
-    </>
+    </div>
   );
 };
 
