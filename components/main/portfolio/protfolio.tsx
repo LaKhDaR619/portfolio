@@ -3,7 +3,6 @@ import { v4 as uuidv4 } from "uuid";
 import PortfolioItem from "./portfolioItem";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import Project from "../project/project";
 
 const Portfolio: React.FC = () => {
   const portfolioItems = [
@@ -63,8 +62,6 @@ const Portfolio: React.FC = () => {
         </div>
         <div className="swiper-pagination-bullets" />
       </div>
-
-      <Project />
     </div>
   );
 };

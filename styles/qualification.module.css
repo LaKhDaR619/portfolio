@@ -36,7 +36,7 @@
 .qualification__subtitle {
   display: inline-block;
   font-size: var(--small-font-size);
-  margin-bottom: var(--m-1);
+  margin-bottom: var(--m-0-25);
 }
 
 .qualification__calendar {
