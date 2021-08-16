@@ -115,6 +115,7 @@ img {
   margin-right: var(--m-1-5);
 }
 .section {
+  /* min-height: 100vh; */
   padding: 2rem 0 4rem;
 }
 .section__title {

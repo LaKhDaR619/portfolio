@@ -3,13 +3,13 @@ import { useEffect, useRef, useState } from "react";
 
 type Props = {
   id: string;
-  className: string;
+  className?: string;
   setActiveNavItem?: (activeItem: string) => void;
 };
 
 const Section: React.FC<Props> = ({
   id,
-  className,
+  className = "",
   setActiveNavItem,
   children,
 }) => {
@@ -33,7 +33,7 @@ const Section: React.FC<Props> = ({
   });
 
   return (
-    <section ref={ref} className={className} id={id}>
+    <section ref={ref} className={`section ${className}`} id={id}>
       {children}
     </section>
   );
