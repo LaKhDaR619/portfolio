@@ -44,7 +44,7 @@ const Qualification: React.FC = () => {
   );
 
   return (
-    <>
+    <div className={styles.qualification}>
       <h2 className="section__title">Qualification</h2>
       <span className="section__subtitle">My personal journey</span>
 
@@ -85,7 +85,7 @@ const Qualification: React.FC = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

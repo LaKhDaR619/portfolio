@@ -29,6 +29,13 @@ const Slider: React.FC = () => {
           active: {
             backgroundColor: "var(--primary-color)",
           },
+          track: {
+            height: "6px",
+          },
+          thumb: {
+            width: "10px",
+            height: "10px",
+          },
         }}
         // @ts-ignore
         className={styles.slider}

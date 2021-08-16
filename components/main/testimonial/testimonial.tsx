@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import { Swiper, SwiperSlide } from "swiper/react";
 import TestimonialItem from "./testimonialItem";
+import Project from "../project/project";
 
 const Testimonial: React.FC = () => {
   const testimonialItems = [
@@ -10,7 +11,7 @@ const Testimonial: React.FC = () => {
   ];
 
   return (
-    <>
+    <div style={{ minWidth: 0 }}>
       <h2 className="section__title">Testimonial</h2>
       <span className="section__subtitle">My client saying</span>
 
@@ -31,7 +32,9 @@ const Testimonial: React.FC = () => {
           ))}
         </Swiper>
       </div>
-    </>
+
+      <Project />
+    </div>
   );
 };
 
