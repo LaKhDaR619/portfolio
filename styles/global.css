@@ -274,9 +274,6 @@ body.dark-theme .slider__container {
 }
 /* medium devices */
 @media screen and (min-width: 568px) {
-  .section {
-    /* padding: 4rem 0; */
-  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -285,8 +282,6 @@ body.dark-theme .slider__container {
   }
   body {
     margin: 0;
-  }
-  .section {
   }
   .section__subtitle {
     margin-bottom: 4rem;
