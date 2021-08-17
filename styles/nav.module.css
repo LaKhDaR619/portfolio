@@ -15,7 +15,7 @@ nav.nav {
   color: var(--primary-color);
 }
 .nav__toggle {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   cursor: pointer;
 }
 .nav__toggle:hover {

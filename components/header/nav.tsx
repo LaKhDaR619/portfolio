@@ -15,7 +15,7 @@ const Nav: React.FC<Props> = ({ activeNavItem, theme, setTheme }) => {
     { href: "home", name: "Home", iconName: "bx-home" },
     { href: "about", name: "About", iconName: "bx-user" },
     { href: "skills", name: "Skills", iconName: "bx-file" },
-    { href: "services", name: "Services", iconName: "uil-briefcase-alt" },
+    { href: "services", name: "Services", iconName: "bx-briefcase" },
     { href: "testimonial", name: "Testimonial", iconName: "bx-star" },
     { href: "contact", name: "Contact", iconName: "bx-send" },
   ];
@@ -50,20 +50,21 @@ const Nav: React.FC<Props> = ({ activeNavItem, theme, setTheme }) => {
           ))}
         </ul>
         <i
-          className={`uil uil-times ${styles.nav__close}`}
+          className={`bx bx-x ${styles.nav__close}`}
           onClick={toggleShowMenu}
         />
       </div>
       <div className={styles.nav__btns}>
         <i
-          className={`uil ${theme === "dark" ? "uil-moon" : "uil-sun"} ${
+          className={`bx ${theme === "dark" ? "bx-moon" : "bx-sun"} ${
             styles["change-theme"]
           }`}
           onClick={handleToggleTheme}
         />
-        <div className={styles.nav__toggle} onClick={toggleShowMenu}>
-          <i className="uil uil-apps" />
-        </div>
+        <i
+          onClick={toggleShowMenu}
+          className={`${styles.nav__toggle} bx bx-grid-alt`}
+        />
       </div>
     </nav>
   );
