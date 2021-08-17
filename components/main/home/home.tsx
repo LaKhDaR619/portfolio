@@ -5,15 +5,15 @@ import SocialItem from "./socialItem";
 const Home: React.FC = () => {
   const socialItems = [
     {
-      iconName: "uil-linkedin-alt",
+      iconName: "bxl-linkedin",
       href: "https://www.linkedin.com/in/lakhdar-ben-boudina-5a276b193/",
     },
     {
-      iconName: "ri-stack-overflow-line",
+      iconName: "bxl-stack-overflow",
       href: "https://stackoverflow.com/users/8734108/lakhdar",
     },
     {
-      iconName: "uil-github-alt",
+      iconName: "bxl-github",
       href: "https://github.com/LaKhDaR619",
     },
   ];

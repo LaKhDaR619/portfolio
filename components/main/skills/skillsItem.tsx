@@ -6,6 +6,8 @@ type Props = {
 };
 
 const SkillsItem: React.FC<Props> = ({ name, percentage }) => {
+  return <div></div>;
+
   return (
     <div className={styles.skills__data}>
       <div className={styles.skills__titles}>

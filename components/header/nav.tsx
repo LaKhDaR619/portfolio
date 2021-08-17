@@ -12,12 +12,12 @@ type Props = {
 
 const Nav: React.FC<Props> = ({ activeNavItem, theme, setTheme }) => {
   const Items = [
-    { href: "home", name: "Home", iconName: "uil-estate" },
-    { href: "about", name: "About", iconName: "uil-user" },
-    { href: "skills", name: "Skills", iconName: "uil-file-alt" },
+    { href: "home", name: "Home", iconName: "bx-home" },
+    { href: "about", name: "About", iconName: "bx-user" },
+    { href: "skills", name: "Skills", iconName: "bx-file" },
     { href: "services", name: "Services", iconName: "uil-briefcase-alt" },
-    { href: "testimonial", name: "Testimonial", iconName: "uil-star" },
-    { href: "contact", name: "Contact", iconName: "uil-message" },
+    { href: "testimonial", name: "Testimonial", iconName: "bx-star" },
+    { href: "contact", name: "Contact", iconName: "bx-send" },
   ];
 
   const [showMenu, toggleShowMenu] = useToggle();
