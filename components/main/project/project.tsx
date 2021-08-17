@@ -9,6 +9,8 @@ const Project: React.FC = () => {
           <p className={styles.project__description}>
             Contact me now and get a 30% discount
           </p>
+        </div>
+        <div className={styles["contact__button-container"]}>
           <a href="#contact" className={`button button--flex button--white`}>
             Contact Me
             <i
@@ -16,8 +18,6 @@ const Project: React.FC = () => {
             />
           </a>
         </div>
-
-        <img src="images/project.png" alt="" className={styles.project__img} />
       </div>
     </div>
   );

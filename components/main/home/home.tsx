@@ -54,8 +54,8 @@ const Home: React.FC = () => {
               />
               <image
                 className={styles["home__blob-img"]}
-                x="12"
-                y="18"
+                x="-60"
+                y="10"
                 href="images/profile.png"
               />
             </g>
