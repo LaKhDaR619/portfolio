@@ -5,21 +5,21 @@ import ContactItem from "./contactItem";
 
 const Contact: React.FC = () => {
   const contactItems = [
-    { icon: "uil-phone", title: "Call Me", subtitle: "+213-665-872-853" },
+    { icon: "bx-phone", title: "Call Me", subtitle: "+213-665-872-853" },
     {
-      icon: "uil-envelope",
+      icon: "bx-envelope",
       title: "Email",
       subtitle: "lakhdar.boudina@gmail.com",
     },
     {
-      icon: "uil-map-marker",
+      icon: "bx-map",
       title: "Location",
       subtitle: "Algiers, Algeria",
     },
   ];
 
   return (
-    <section className={`${styles.contact} section`} id="contact">
+    <div>
       <h2 className="section__title">Contact Me</h2>
       <span className="section__subtitle">Get in touch</span>
 
@@ -36,7 +36,7 @@ const Contact: React.FC = () => {
         </div>
         <ContactForm />
       </div>
-    </section>
+    </div>
   );
 };
 

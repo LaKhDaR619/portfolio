@@ -5,18 +5,17 @@
 .skills__header {
   display: flex;
   align-items: center;
-  margin-bottom: var(--m-2-5);
-  cursor: pointer;
+  padding-bottom: 1rem;
 }
 
-.skills__icon,
-.skills__arrow {
-  font-size: 2rem;
-  color: var(--primary-color);
+.skills__section:not(:first-child) {
+  padding-top: 1.5rem;
 }
 
 .skills__icon {
+  font-size: 2rem;
   margin-right: var(--m-0-75);
+  color: var(--primary-color);
 }
 
 .skills__title {
@@ -28,54 +27,25 @@
   color: var(--text-color-light);
 }
 
-.skills__arrow {
-  margin-left: auto;
-  transition: 0.4s;
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  gap: 0.5rem;
 }
 
-div.skills__list {
-  row-gap: 1.5rem;
-  padding-left: 2.7rem;
-}
-
-.skills__titles {
+.skills__item {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: var(--m-0-5);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
 }
 
-.skills__name {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-}
-
-.skills__bar,
-.skills__percentage {
-  height: 5px;
-  border-radius: 0.25rem;
-}
-
-.skills__bar {
-  background-color: var(--primary-color-light);
-}
-
-.skills__percentage {
-  display: block;
-  background-color: var(--primary-color);
-}
-
-.skills__close .skills__list {
-  height: 0;
-  overflow: hidden;
-}
-
-.skills__open .skills__list {
-  height: max-content;
-  margin-bottom: var(--m-2-5);
-}
-
-.skills__open .skills__arrow {
-  transform: rotate(180deg);
+.skills__item-icon {
+  font-size: 3rem;
+  width: 48px;
+  color: var(--primary-color);
 }
 
 /* small devices */
@@ -83,13 +53,21 @@ div.skills__list {
   .skills__title {
     font-size: var(--normal-font-size);
   }
+  .skills__item-icon {
+    font-size: 2rem;
+    width: 32px;
+  }
 }
 /* medium devices */
 @media screen and (min-width: 568px) {
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
   }
-  div.skills__list {
+  .skills__section:not(:first-child) {
+    padding-top: 0;
+  }
+  .skills__list {
     padding-left: 0;
   }
 }

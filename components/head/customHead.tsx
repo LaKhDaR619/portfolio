@@ -14,9 +14,9 @@ const CustomHead: React.FC<Props> = ({ title }) => {
       />
       <meta name="og:title" content={title} />
       <link
+        href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
         rel="stylesheet"
-        href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-      />
+      ></link>
     </Head>
   );
 };

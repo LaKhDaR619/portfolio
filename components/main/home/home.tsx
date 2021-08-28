@@ -5,15 +5,15 @@ import SocialItem from "./socialItem";
 const Home: React.FC = () => {
   const socialItems = [
     {
-      iconName: "uil-linkedin-alt",
+      iconName: "bxl-linkedin",
       href: "https://www.linkedin.com/in/lakhdar-ben-boudina-5a276b193/",
     },
     {
-      iconName: "ri-stack-overflow-line",
+      iconName: "bxl-stack-overflow",
       href: "https://stackoverflow.com/users/8734108/lakhdar",
     },
     {
-      iconName: "uil-github-alt",
+      iconName: "bxl-github",
       href: "https://github.com/LaKhDaR619",
     },
   ];
@@ -54,8 +54,8 @@ const Home: React.FC = () => {
               />
               <image
                 className={styles["home__blob-img"]}
-                x="12"
-                y="18"
+                x="25"
+                y="-50"
                 href="images/profile.png"
               />
             </g>
@@ -70,7 +70,7 @@ const Home: React.FC = () => {
           </p>
           <a href="#contact" className="button button--flex">
             Contact Me
-            <i className="uil uil-message button__icon" />
+            <i className="bx bx-send button__icon" />
           </a>
         </div>
       </div>
@@ -80,9 +80,9 @@ const Home: React.FC = () => {
           href="#about"
           className={`${styles["home__scroll-button"]} button--flex`}
         >
-          <i className={`uil uil-mouse-alt ${styles["home__scroll-mouse"]}`} />
+          <i className={`bx bx-mouse ${styles["home__scroll-mouse"]}`} />
           <span className={styles["home__scroll-name"]}>Scroll down</span>
-          <i className={`uil uil-arrow-down`} />
+          <i className={`bx bx-down-arrow-alt`} />
         </a>
       </div>
     </div>

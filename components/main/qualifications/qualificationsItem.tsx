@@ -34,7 +34,7 @@ const QualificationItem: React.FC<Props> = ({
         <h3 className={styles.qualification__title}>{title}</h3>
         <span className={styles.qualification__subtitle}>{subtitle}</span>
         <div className={styles.qualification__calendar}>
-          <i className={`uil uil-calendar-alt`} />
+          <i className={`bx bx-calendar`} />
           {date}
         </div>
       </div>

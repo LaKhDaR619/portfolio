@@ -2,7 +2,7 @@ import styles from "../../../styles/about.module.css";
 
 const About: React.FC = () => {
   return (
-    <>
+    <div>
       <h2 className="section__title">About Me</h2>
       <span className="section__subtitle">My Introduction</span>
 
@@ -44,12 +44,12 @@ const About: React.FC = () => {
               className="button button--flex"
             >
               Download CV
-              <i className="uil uil-download-alt button__icon" />
+              <i className="bx bx-download button__icon" />
             </a>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

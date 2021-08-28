@@ -3,13 +3,13 @@ import { useEffect, useRef, useState } from "react";
 
 type Props = {
   id: string;
-  className: string;
+  className?: string;
   setActiveNavItem?: (activeItem: string) => void;
 };
 
 const Section: React.FC<Props> = ({
   id,
-  className,
+  className = "",
   setActiveNavItem,
   children,
 }) => {
@@ -20,12 +20,6 @@ const Section: React.FC<Props> = ({
 
     const sectionHeight = ref.current.offsetHeight;
     const sectionTop = ref.current.offsetTop - 50;
-
-    // if (
-    //   currPos.y * -1 + 10 >= prevPos.y * -1 &&
-    //   prevPos.y * -1 + 10 >= currPos.y * -1
-    // )
-    //   console.log("stop detected");
 
     if (
       currPos.y * -1 > sectionTop &&
@@ -39,7 +33,7 @@ const Section: React.FC<Props> = ({
   });
 
   return (
-    <section ref={ref} className={className} id={id}>
+    <section ref={ref} className={`section ${className}`} id={id}>
       {children}
     </section>
   );

@@ -44,7 +44,7 @@ const Qualification: React.FC = () => {
   );
 
   return (
-    <>
+    <div className={styles.qualification}>
       <h2 className="section__title">Qualification</h2>
       <span className="section__subtitle">My personal journey</span>
 
@@ -56,9 +56,7 @@ const Qualification: React.FC = () => {
             }`}
             onClick={() => setSelectedTab("education")}
           >
-            <i
-              className={`uil uil-graduation-cap ${styles.qualification__icon}`}
-            />
+            <i className={`bx bxs-graduation ${styles.qualification__icon}`} />
             Education
           </div>
           <div
@@ -67,9 +65,7 @@ const Qualification: React.FC = () => {
             }`}
             onClick={() => setSelectedTab("work")}
           >
-            <i
-              className={`uil uil-briefcase-alt ${styles.qualification__icon}`}
-            />
+            <i className={`bx bx-briefcase ${styles.qualification__icon}`} />
             Work
           </div>
         </div>
@@ -85,7 +81,7 @@ const Qualification: React.FC = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
