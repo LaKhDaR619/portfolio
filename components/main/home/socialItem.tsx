@@ -8,7 +8,7 @@ type Props = {
 const SocialItem: React.FC<Props> = ({ iconName, href }) => {
   return (
     <a href={href} target="_blank" className={styles["home__social-icon"]}>
-      <i className={`uil ${iconName}`} />
+      <i className={`bx ${iconName}`} />
     </a>
   );
 };

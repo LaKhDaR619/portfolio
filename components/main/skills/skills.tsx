@@ -4,16 +4,19 @@ import SkillsSection from "./skillsSection";
 
 const Skills: React.FC = () => {
   const frontendSkills = [
-    { name: "HTML", percentage: 90 },
-    { name: "CSS", percentage: 80 },
-    { name: "JavaScript", percentage: 70 },
-    { name: "React", percentage: 90 },
+    { icon: "bxl-html5", name: "HTML" },
+    { icon: "bxl-css3", name: "CSS" },
+    { icon: "bxl-javascript", name: "JavaScript" },
+    { icon: "bxl-react", name: "React" },
+    { icon: "bxl-redux", name: "Redux" },
   ];
 
   const backendSkills = [
-    { name: "NodeJS", percentage: 80 },
-    { name: "PostgreSQL", percentage: 60 },
-    { name: "NestJS", percentage: 60 },
+    { icon: "bxl-nodejs", name: "NodeJS" },
+    { image: "nest.svg", name: "NestJS" },
+    { image: "postgresql.png", name: "PostgreSQL" },
+    { image: "ts.png", name: "TypeScript" },
+    { image: "mongo.svg", name: "MongoDB" },
   ];
 
   // TODO: change skills from progress bar to icons
@@ -24,14 +27,16 @@ const Skills: React.FC = () => {
       <span className="section__subtitle">My Technical level</span>
       <div className={`${styles.skills__container} container grid`}>
         <SkillsSection
-          title="Front-end developer"
-          subtitle="More than 4 years"
-          skills={frontendSkills}
-        />
-        <SkillsSection
           title="Back-end developer"
+          icon="bx-code-curly"
           subtitle="More than 2 years"
           skills={backendSkills}
+        />
+        <SkillsSection
+          title="Front-end developer"
+          icon="bx-code"
+          subtitle="More than 4 years"
+          skills={frontendSkills}
         />
       </div>
       <Qualifications />

@@ -6,7 +6,7 @@ import Portfolio from "../portfolio/protfolio";
 const Services: React.FC = () => {
   const servicesSections = [
     {
-      icon: "uil-arrow",
+      icon: "bx-code",
       title: ["Front-end", "Developer"],
       items: [
         "I develop the user interface.",
@@ -15,7 +15,7 @@ const Services: React.FC = () => {
       ],
     },
     {
-      icon: "uil-brackets-curly",
+      icon: "bx-code-curly",
       title: ["Back-end", "Developer"],
       items: ["I develop the backend.", "I fix any bugs that you have"],
     },

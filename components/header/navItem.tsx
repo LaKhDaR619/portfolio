@@ -22,8 +22,8 @@ const NavItem: React.FC<Props> = ({
         className={`${styles.nav__link} ${isActive ? "active-link" : ""}`}
         onClick={onClick}
       >
-        <i className={`uil ${iconName} ${styles.nav__icon}`} />
-        {name}
+        <i className={`bx ${iconName} ${styles.nav__icon}`} />
+        <span>{name}</span>
       </a>
     </li>
   );
