@@ -9,7 +9,7 @@ type Props = {
 const ContactItem: React.FC<Props> = ({ icon, title, subtitle }) => {
   return (
     <div className={styles.contact__information}>
-      <i className={`uil ${icon} ${styles.contact__icon}`} />
+      <i className={`bx ${icon} ${styles.contact__icon}`} />
 
       <div>
         <h3 className={styles.contact__title}>{title}</h3>

@@ -24,14 +24,16 @@ const Skills: React.FC = () => {
       <span className="section__subtitle">My Technical level</span>
       <div className={`${styles.skills__container} container grid`}>
         <SkillsSection
-          title="Front-end developer"
-          subtitle="More than 4 years"
-          skills={frontendSkills}
-        />
-        <SkillsSection
           title="Back-end developer"
+          icon="bx-code-curly"
           subtitle="More than 2 years"
           skills={backendSkills}
+        />
+        <SkillsSection
+          title="Front-end developer"
+          icon="bx-code"
+          subtitle="More than 4 years"
+          skills={frontendSkills}
         />
       </div>
       <Qualifications />

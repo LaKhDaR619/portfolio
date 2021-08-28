@@ -36,21 +36,21 @@ const Footer: React.FC = () => {
               target="_blank"
               className={styles.footer__social}
             >
-              <i className={`uil uil-facebook-f`} />
+              <i className="bx bxl-facebook" />
             </a>
             <a
               href="https://www.instagram.com/lakhdar.boudina/"
               target="_blank"
               className={styles.footer__social}
             >
-              <i className={`uil uil-instagram`} />
+              <i className="bx bxl-instagram"></i>
             </a>
             <a
               href="https://twitter.com/BoudinaLakhdar"
               target="_blank"
               className={styles.footer__social}
             >
-              <i className={`uil uil-twitter-alt`} />
+              <i className="bx bxl-twitter"></i>
             </a>
           </div>
         </div>

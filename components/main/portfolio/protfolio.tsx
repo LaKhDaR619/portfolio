@@ -10,7 +10,7 @@ const Portfolio: React.FC = () => {
       image: "images/portfolio1.jpg",
       title: "Portfolio",
       description:
-        "migrated this protfolio from html, css, vanillaJS to fully modular nextJS project.",
+        "migrated this protfolio from html, css, vanillaJS to fully modular nextJS project, adding some new features to it.",
       buttonText: "Code",
       link: "https://github.com/LaKhDaR619/portfolio",
     },
@@ -18,7 +18,8 @@ const Portfolio: React.FC = () => {
       image: "images/portfolio2.jpg",
       title: "Docta",
       description:
-        "created a backend from scratch and managed it along another backend, created pixel-perfect dashboard front end for the docta project.",
+        "created a backend from scratch and managed its communication with another backend, created pixel-perfect dashboard front end for the docta project.",
+      buttonText: "App on Google Play",
       link: "https://play.google.com/store/apps/details?id=io.cleverzone.docta",
     },
   ];
@@ -54,12 +55,12 @@ const Portfolio: React.FC = () => {
         </Swiper>
         <div className="swiper-button-next">
           <i
-            className={`uil uil-angle-right-b ${styles["swiper-portfolio-icon"]}`}
+            className={`bx bx-md bx-chevron-right ${styles["swiper-portfolio-icon"]}`}
           />
         </div>
         <div className="swiper-button-prev">
           <i
-            className={`uil uil-angle-left-b ${styles["swiper-portfolio-icon"]}`}
+            className={`bx bx-md bx-chevron-left ${styles["swiper-portfolio-icon"]}`}
           />
         </div>
         <div className="swiper-pagination-bullets" />

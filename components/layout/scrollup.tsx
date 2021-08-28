@@ -18,7 +18,7 @@ const ScrollUp: React.FC<Props> = () => {
         showScrollTop ? styles["show-scroll"] : ""
       }`}
     >
-      <i className={`uil uil-arrow-up ${styles.scrollup__icon}`} />
+      <i className={`bx bx-up-arrow-alt ${styles.scrollup__icon}`} />
     </a>
   );
 };

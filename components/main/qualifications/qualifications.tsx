@@ -56,9 +56,7 @@ const Qualification: React.FC = () => {
             }`}
             onClick={() => setSelectedTab("education")}
           >
-            <i
-              className={`uil uil-graduation-cap ${styles.qualification__icon}`}
-            />
+            <i className={`bx bxs-graduation ${styles.qualification__icon}`} />
             Education
           </div>
           <div
@@ -67,9 +65,7 @@ const Qualification: React.FC = () => {
             }`}
             onClick={() => setSelectedTab("work")}
           >
-            <i
-              className={`uil uil-briefcase-alt ${styles.qualification__icon}`}
-            />
+            <i className={`bx bx-briefcase ${styles.qualification__icon}`} />
             Work
           </div>
         </div>

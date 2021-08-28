@@ -31,7 +31,7 @@ const PortfolioItem: React.FC<Props> = ({
         >
           {buttonText}
           <i
-            className={`uil uil-arrow-right button__icon ${styles.portfolio__button__icon}`}
+            className={`bx bx-right-arrow-alt button__icon ${styles.portfolio__button__icon}`}
           />
         </a>
       </div>

@@ -5,9 +5,11 @@ import Project from "../project/project";
 
 const Testimonial: React.FC = () => {
   const testimonialItems = [
-    { image: "images/testimonial1.jpg", name: "Sara Smith" },
-    { image: "images/testimonial2.jpg", name: "Matt Robinson" },
-    { image: "images/testimonial3.jpg", name: "Paul Harris" },
+    {
+      name: "Rashid AlZ",
+      description:
+        "Great man and freelancer. Even with many issues during handover, he was able and willing to give guidance and support until the project was fully operational",
+    },
   ];
 
   return (
@@ -17,7 +19,7 @@ const Testimonial: React.FC = () => {
 
       <div className="container">
         <Swiper
-          loop
+          // loop
           grabCursor
           spaceBetween={48}
           pagination={{ clickable: true, dynamicBullets: true }}
@@ -27,7 +29,7 @@ const Testimonial: React.FC = () => {
         >
           {testimonialItems.map((item) => (
             <SwiperSlide key={uuidv4()}>
-              <TestimonialItem image={item.image} name={item.name} />
+              <TestimonialItem name={item.name} />
             </SwiperSlide>
           ))}
         </Swiper>
