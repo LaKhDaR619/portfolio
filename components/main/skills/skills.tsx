@@ -4,16 +4,17 @@ import SkillsSection from "./skillsSection";
 
 const Skills: React.FC = () => {
   const frontendSkills = [
-    { name: "HTML", percentage: 90 },
-    { name: "CSS", percentage: 80 },
-    { name: "JavaScript", percentage: 70 },
-    { name: "React", percentage: 90 },
+    { icon: "bxl-html5", name: "HTML" },
+    { icon: "bxl-css3", name: "CSS" },
+    { icon: "bxl-javascript", name: "JavaScript" },
+    { icon: "bxl-react", name: "React" },
+    { icon: "bxl-redux", name: "Redux" },
   ];
 
   const backendSkills = [
-    { name: "NodeJS", percentage: 80 },
-    { name: "PostgreSQL", percentage: 60 },
-    { name: "NestJS", percentage: 60 },
+    { icon: "bxl-nodejs", name: "NodeJS" },
+    { image: "postgresql.png", name: "PostgreSQL" },
+    { image: "nest.svg", name: "NestJS" },
   ];
 
   // TODO: change skills from progress bar to icons
