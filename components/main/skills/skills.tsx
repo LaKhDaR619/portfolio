@@ -13,8 +13,10 @@ const Skills: React.FC = () => {
 
   const backendSkills = [
     { icon: "bxl-nodejs", name: "NodeJS" },
-    { image: "postgresql.png", name: "PostgreSQL" },
     { image: "nest.svg", name: "NestJS" },
+    { image: "postgresql.png", name: "PostgreSQL" },
+    { image: "ts.png", name: "TypeScript" },
+    { image: "mongo.svg", name: "MongoDB" },
   ];
 
   // TODO: change skills from progress bar to icons
