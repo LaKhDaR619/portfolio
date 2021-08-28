@@ -55,12 +55,12 @@ const Portfolio: React.FC = () => {
         </Swiper>
         <div className="swiper-button-next">
           <i
-            className={`uil uil-angle-right-b ${styles["swiper-portfolio-icon"]}`}
+            className={`bx bx-md bx-chevron-right ${styles["swiper-portfolio-icon"]}`}
           />
         </div>
         <div className="swiper-button-prev">
           <i
-            className={`uil uil-angle-left-b ${styles["swiper-portfolio-icon"]}`}
+            className={`bx bx-md bx-chevron-left ${styles["swiper-portfolio-icon"]}`}
           />
         </div>
         <div className="swiper-pagination-bullets" />

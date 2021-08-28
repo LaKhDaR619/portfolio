@@ -13,9 +13,7 @@ const Project: React.FC = () => {
         <div className={styles["contact__button-container"]}>
           <a href="#contact" className={`button button--flex button--white`}>
             Contact Me
-            <i
-              className={`uil uil-message ${styles.project__icon} button__icon`}
-            />
+            <i className={`bx bx-send ${styles.project__icon} button__icon`} />
           </a>
         </div>
       </div>

@@ -27,7 +27,7 @@ const TestimonialItem: React.FC<Props> = ({ image, name }) => {
           {[...new Array(5)].map((_, index) => (
             <i
               key={uuidv4()}
-              className={`uil uil-star ${styles["testimonial__icon-star"]}`}
+              className={`bx bx-star ${styles["testimonial__icon-star"]}`}
             />
           ))}
         </div>

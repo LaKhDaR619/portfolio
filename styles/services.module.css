@@ -73,6 +73,7 @@
 
 .services__modal-service {
   display: flex;
+  align-items: center;
 }
 
 .services__modal-title {
