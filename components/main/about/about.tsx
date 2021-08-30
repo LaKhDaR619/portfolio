@@ -39,7 +39,7 @@ const About: React.FC = () => {
 
           <div className={styles.about__buttons}>
             <a
-              download=""
+              download="true"
               href="pdf/Lakhdar_CV.pdf"
               className="button button--flex"
             >

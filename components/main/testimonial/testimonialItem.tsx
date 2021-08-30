@@ -4,9 +4,10 @@ import { v4 as uuidv4 } from "uuid";
 type Props = {
   image?: string;
   name: string;
+  description: string;
 };
 
-const TestimonialItem: React.FC<Props> = ({ image, name }) => {
+const TestimonialItem: React.FC<Props> = ({ image, name, description }) => {
   return (
     <div className={styles.testimonial__content}>
       <div className={styles.testimonial__data}>
@@ -24,10 +25,7 @@ const TestimonialItem: React.FC<Props> = ({ image, name }) => {
         </div>
       </div>
 
-      <p className={styles.testimonial__description}>
-        I get a good impression, I carry out my project with all the possible
-        quality and attention and support 24 hours a day
-      </p>
+      <p className={styles.testimonial__description}>{description}</p>
     </div>
   );
 };

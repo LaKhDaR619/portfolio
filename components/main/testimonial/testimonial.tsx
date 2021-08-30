@@ -9,6 +9,11 @@ const Testimonial: React.FC = () => {
       description:
         "Great man and freelancer. Even with many issues during handover, he was able and willing to give guidance and support until the project was fully operational",
     },
+    {
+      name: "",
+      description:
+        "Lakhdar is a true senior developer! with his intensive experience, he proposed the best technologies for our needs, not only on the front-end, but he also helped us designing the REST API with Node and Express, Lakhdar is a great communicator as well, fast and efficient, I strongly recommend him for anyone who is building React based applications at any scale",
+    },
   ];
 
   return (
@@ -28,7 +33,10 @@ const Testimonial: React.FC = () => {
         >
           {testimonialItems.map((item) => (
             <SwiperSlide key={uuidv4()}>
-              <TestimonialItem name={item.name} />
+              <TestimonialItem
+                name={item.name}
+                description={item.description}
+              />
             </SwiperSlide>
           ))}
         </Swiper>
