@@ -15,7 +15,6 @@ const Nav: React.FC<Props> = ({ activeNavItem, theme, setTheme }) => {
     { href: "home", name: "Home", iconName: "bx-home" },
     { href: "about", name: "About", iconName: "bx-user" },
     { href: "skills", name: "Skills", iconName: "bx-file" },
-    { href: "services", name: "Services", iconName: "bx-briefcase" },
     { href: "testimonial", name: "Testimonial", iconName: "bx-star" },
     { href: "contact", name: "Contact", iconName: "bx-send" },
   ];

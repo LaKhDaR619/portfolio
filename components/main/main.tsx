@@ -3,7 +3,6 @@ import Section from "../section";
 import About from "./about/about";
 import Contact from "./contact/contact";
 import Home from "./home/home";
-import Services from "./services/services";
 import Skills from "./skills/skills";
 import Testimonial from "./testimonial/testimonial";
 
@@ -22,9 +21,6 @@ const Main: React.FC<Props> = ({ setActiveNavItem }) => {
       </Section>
       <Section id="skills" setActiveNavItem={setActiveNavItem}>
         <Skills />
-      </Section>
-      <Section id="services" setActiveNavItem={setActiveNavItem}>
-        <Services />
       </Section>
       <Section id="testimonial" setActiveNavItem={setActiveNavItem}>
         <Testimonial />

@@ -14,16 +14,6 @@ const Footer: React.FC = () => {
 
           <ul className={styles.footer__links}>
             <li>
-              <a href="#services" className={styles.footer__link}>
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#portfolio" className={styles.footer__link}>
-                Portfolio
-              </a>
-            </li>
-            <li>
               <a href="#contact" className={styles.footer__link}>
                 Contact
               </a>

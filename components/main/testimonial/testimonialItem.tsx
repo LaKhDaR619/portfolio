@@ -22,15 +22,6 @@ const TestimonialItem: React.FC<Props> = ({ image, name }) => {
             <span className={styles.testimonial__client}>Client</span>
           </div>
         </div>
-
-        <div style={{ display: "flex" }}>
-          {[...new Array(5)].map((_, index) => (
-            <i
-              key={uuidv4()}
-              className={`bx bx-star ${styles["testimonial__icon-star"]}`}
-            />
-          ))}
-        </div>
       </div>
 
       <p className={styles.testimonial__description}>
