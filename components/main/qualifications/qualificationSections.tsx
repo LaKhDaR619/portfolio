@@ -4,29 +4,38 @@ import QualificationsItem from "./qualificationsItem";
 import { Qualification } from "./types";
 
 type Props = {
-  qualifications: Qualification[];
-  isSelected: boolean;
+  qualifications: {
+    header: {
+      title: string;
+      icon: string;
+    };
+    data: Qualification[];
+  };
 };
 
-const QualificationSection: React.FC<Props> = ({
-  qualifications,
-  isSelected,
-}) => {
+const QualificationSection: React.FC<Props> = ({ qualifications }) => {
+  const { title, icon } = qualifications.header;
+
   return (
-    <div
-      className={styles.qualification__content}
-      style={{ display: isSelected ? "block" : "none" }}
-    >
-      {qualifications.map((item, index) => (
-        <QualificationsItem
-          key={uuidv4()}
-          title={item.title}
-          subtitle={item.subtitle}
-          date={item.date}
-          index={index}
-          length={qualifications.length}
-        />
-      ))}
+    <div className={styles.qualification__section}>
+      <div className={`${styles.qualification__button} button--flex`}>
+        <i className={`bx ${icon} ${styles.qualification__icon}`} />
+        {title}
+      </div>
+
+      <div className={styles.qualification__content}>
+        {qualifications.data.map((item, index) => (
+          <QualificationsItem
+            key={uuidv4()}
+            title={item.title}
+            subtitle={item.subtitle}
+            description={item.description}
+            date={item.date}
+            index={index}
+            length={qualifications.data.length}
+          />
+        ))}
+      </div>
     </div>
   );
 };

@@ -39,7 +39,6 @@ const Skills: React.FC = () => {
           skills={frontendSkills}
         />
       </div>
-      <Qualifications />
     </div>
   );
 };

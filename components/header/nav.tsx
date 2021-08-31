@@ -15,7 +15,7 @@ const Nav: React.FC<Props> = ({ activeNavItem, theme, setTheme }) => {
     { href: "home", name: "Home", iconName: "bx-home" },
     { href: "about", name: "About", iconName: "bx-user" },
     { href: "skills", name: "Skills", iconName: "bx-file" },
-    { href: "qualification", name: "Work", iconName: "bx-briefcase" },
+    { href: "qualification", name: "Qualification", iconName: "bx-briefcase" },
     { href: "testimonial", name: "Testimonial", iconName: "bx-star" },
     { href: "contact", name: "Contact", iconName: "bx-send" },
   ];
@@ -33,7 +33,6 @@ const Nav: React.FC<Props> = ({ activeNavItem, theme, setTheme }) => {
       <a href="#" className={styles.nav__logo}>
         LaKhDaR
       </a>
-      <Slider />
       <div
         className={`${styles.nav__menu} ${showMenu ? styles["show-menu"] : ""}`}
       >

@@ -21,7 +21,6 @@ const Slider: React.FC = () => {
   }, []);
 
   useScrollPosition(({ prevPos, currPos }) => {
-    console.log(currPos.y);
     const newHue = ((currPos.y * -1) / 10) % 360;
 
     handleHueChange(newHue > 360 && newHue < 400 ? 400 : newHue);

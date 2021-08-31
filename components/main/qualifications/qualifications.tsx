@@ -3,45 +3,55 @@ import styles from "../../../styles/qualification.module.css";
 import QualificationsSection from "./qualificationSections";
 
 const Qualification: React.FC = () => {
-  const educationQualifications = [
-    {
-      title: "B.Sc Computer Science",
-      subtitle: "Ziane Achour University - Algeria",
-      date: "2013 - 2016",
+  const workQualifications = {
+    header: {
+      title: "Work",
+      icon: "bx-briefcase",
     },
-    {
-      title: "M.Sc Computer Science",
-      subtitle: "Ziane Achour University - Algeria",
-      date: "2016 - 2018",
-    },
-    {
-      title: "Learning Everything",
-      subtitle: "From everyone",
-      date: "1994 - Current",
-    },
-  ];
+    data: [
+      {
+        title: "Software Engineer",
+        subtitle: "CleverZone - Algiers",
+        description:
+          "designing and implementing high quality solutions, implementing pixel-perfect UIs from existing designs, adding new features and UIs to the existing projects, maintaining existing projects, contributing to every aspect from creation, testing to deployment.",
+        date: "2021 - Current",
+      },
+      {
+        title: "Temporary university Teacher (Mobile Development)",
+        subtitle: "Ziane Achour University - Algeria",
+        description:
+          "Taught Creating Android Layouts using XML, Implementing the Logic using JAVA (interacting with the layout, navigation between screens, Interacting with the android system), Making fully functional apps (as an end of study projects).",
+        date: "2020 - 2021",
+      },
+      {
+        title: "Freelancer (Web, Mobile Development)",
+        subtitle: "Upwork, Freelancer",
+        description: "",
+        date: "2015 - Current",
+      },
+    ],
+  };
 
-  const workQualifications = [
-    {
-      title: "Freelancer (Web, Mobile Development)",
-      subtitle: "Upwork, Freelancer",
-      date: "2015 - Current",
+  const educationQualifications = {
+    header: {
+      title: "Education",
+      icon: "bxs-graduation",
     },
-    {
-      title: "Temporary university Teacher (Mobile Development)",
-      subtitle: "Ziane Achour University - Algeria",
-      date: "2020 - 2021",
-    },
-    {
-      title: "Software Engineer",
-      subtitle: "CleverZone - Algiers",
-      date: "2021 - Current",
-    },
-  ];
-
-  const [selectedTab, setSelectedTab] = useState<"education" | "work">(
-    "education"
-  );
+    data: [
+      {
+        title: "M.Sc Computer Science",
+        subtitle: "Ziane Achour University - Algeria",
+        description: "",
+        date: "2016 - 2018",
+      },
+      {
+        title: "B.Sc Computer Science",
+        subtitle: "Ziane Achour University - Algeria",
+        description: "",
+        date: "2013 - 2016",
+      },
+    ],
+  };
 
   return (
     <div className={styles.qualification}>
@@ -49,36 +59,9 @@ const Qualification: React.FC = () => {
       <span className="section__subtitle">My personal journey</span>
 
       <div className={`${styles.qualification__container} container`}>
-        <div className={styles.qualification__tabs}>
-          <div
-            className={`${styles.qualification__button} button--flex ${
-              selectedTab === "education" ? styles.qualification__active : ""
-            }`}
-            onClick={() => setSelectedTab("education")}
-          >
-            <i className={`bx bxs-graduation ${styles.qualification__icon}`} />
-            Education
-          </div>
-          <div
-            className={`${styles.qualification__button} button--flex ${
-              selectedTab === "work" ? styles.qualification__active : ""
-            }`}
-            onClick={() => setSelectedTab("work")}
-          >
-            <i className={`bx bx-briefcase ${styles.qualification__icon}`} />
-            Work
-          </div>
-        </div>
-
         <div className={styles.qualification__sections}>
-          <QualificationsSection
-            qualifications={educationQualifications}
-            isSelected={selectedTab === "education"}
-          />
-          <QualificationsSection
-            qualifications={workQualifications}
-            isSelected={selectedTab === "work"}
-          />
+          <QualificationsSection qualifications={workQualifications} />
+          <QualificationsSection qualifications={educationQualifications} />
         </div>
       </div>
     </div>
